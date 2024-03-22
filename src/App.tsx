@@ -6,7 +6,7 @@ import img1 from './assets/pexels-andrea-piacquadio-3768131.jpg';
 import img2 from './assets/pexels-andrea-piacquadio-3823497.jpg';
 import img3 from './assets/pexels-charlotte-may-5825576.jpg';
 import img4 from './assets/pexels-juliane-sanchez-20191410.jpg';
-import img5 from './assets/pexels-vlada-karpovich-5790837.jpg';
+// import img5 from './assets/pexels-vlada-karpovich-5790837.jpg';
 import img6 from './assets/pexels-pixabay-259588.jpg';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <section>
         <div className='w-full overflow-hidden'>
           <img
-            className='w-screen object-cover absolute opacity-25 -z-10'
+            className='w-screen object-cover absolute opacity-10 -z-10'
             src={img6}
             alt='Img6'
           />
@@ -53,8 +53,8 @@ function App() {
       </section>
 
       {/* VISION */}
-      <section className='flex flex-row items-center justify-center p-24 bg-sand'>
-        <div className='p-8'>
+      <section className='flex flex-col md:flex-row items-center justify-center p-24 bg-sand'>
+        <div className='w-full md:w-auto p-8'>
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
@@ -63,7 +63,8 @@ function App() {
             />
           </div>
         </div>
-        <div className='p-8'>
+
+        <div className='w-full md:w-auto p-8'>
           <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
             VISION
           </h1>
@@ -82,7 +83,7 @@ function App() {
       </section>
 
       {/* WHAT WE DO */}
-      <section className='flex flex-row items-center justify-center p-24 bg-beige'>
+      <section className='flex flex-row items-center justify-center p-24 bg-white'>
         <div className='p-8'>
           <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
             WHAT WE DO
@@ -90,6 +91,9 @@ function App() {
           <p className='max-w-xl text-left text-xl m-3'>
             At HOME CARE, we believe that home care is everything. We will treat
             you like family, because at Home Care, you are family.
+          </p>
+          <p className='max-w-xl text-left text-xl m-3'>
+            We serve homes in Whittier, La Mirada, and Fullerton.
           </p>
           <div className='flex justify-start'>
             <button>DO SOMETHING</button>
@@ -127,30 +131,6 @@ function App() {
           <p className='max-w-xl text-right text-xl m-3'>- John Smith</p>
           <div className='flex justify-start'>
             <button>DO SOMETHING</button>
-          </div>
-        </div>
-      </section>
-
-      {/* LOCATIONS */}
-      <section className='flex flex-row items-center justify-center p-24 bg-beige'>
-        <div className='p-8'>
-          <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
-            LOCATIONS
-          </h1>
-          <p className='max-w-xl text-left text-xl m-3'>
-            We serve homes in Whittier, La Mirada, and Fullerton.
-          </p>
-          <div className='flex justify-start'>
-            <button>DO SOMETHING</button>
-          </div>
-        </div>
-        <div className='p-8'>
-          <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
-            <img
-              className='object-cover w-full h-full'
-              src={img5}
-              alt='Random Unsplash Image'
-            />
           </div>
         </div>
       </section>

@@ -5,9 +5,8 @@ import icon from '../assets/home-alt-svgrepo-com.svg';
 
 const navigation = [
   { name: 'Mission', href: '#', current: false },
-  { name: 'Location', href: '#', current: false },
+  { name: 'What We Do', href: '#', current: false },
   { name: 'Testimonials', href: '#', current: false },
-  { name: 'Location', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ];
 
@@ -19,7 +18,7 @@ function classNames<T extends string | { [key: string]: boolean }>(
 
 export default function NavBar() {
   return (
-    <Disclosure as='nav' className='w-full bg-sand bg-opacity-50 absolute'>
+    <Disclosure as='nav' className='w-full  absolute'>
       {({ open }) => (
         <>
           <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
@@ -65,7 +64,7 @@ export default function NavBar() {
           </div>
 
           <Disclosure.Panel className='sm:hidden'>
-            <div className='space-y-1 bg-white px-2 pb-3 pt-2'>
+            <div className='space-y-1 bg-sand px-2 pb-3 pt-2'>
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
