@@ -54,7 +54,7 @@ function App() {
       </section>
 
       {/* VISION */}
-      <section className='flex flex-row items-center justify-center p-24 bg-sky-300 '>
+      <section className='flex flex-row items-center justify-center p-24 bg-sand'>
         <div className='p-8'>
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
@@ -87,7 +87,7 @@ function App() {
       </section>
 
       {/* WHAT WE DO */}
-      <section className='flex flex-row items-center justify-center p-24 bg-white'>
+      <section className='flex flex-row items-center justify-center p-24 bg-beige'>
         <div className='p-8'>
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
@@ -111,7 +111,7 @@ function App() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className='flex flex-row items-center justify-center p-24 bg-sky-300'>
+      <section className='flex flex-row items-center justify-center p-24 bg-sand'>
         <div className='p-8'>
           <h1 className='bg-wh text-6xl  text-left font-bold text-green-800 m-3'>
             TESTIMONIALS
@@ -134,7 +134,7 @@ function App() {
       </section>
 
       {/* LOCATIONS */}
-      <section className='flex flex-row items-center justify-center p-24 bg-white'>
+      <section className='flex flex-row items-center justify-center p-24 bg-beige'>
         <div className='p-8'>
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
@@ -158,7 +158,7 @@ function App() {
       </section>
 
       {/* CONTACT */}
-      <section className='flex flex-row items-center justify-center p-24 bg-slate-200'>
+      <section className='flex flex-row items-center justify-center p-24 bg-white'>
         <div className='p-8'>
           <h1 className='bg-wh text-6xl  text-left font-bold text-green-800 m-3'>
             CONTACT

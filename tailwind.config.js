@@ -5,6 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      'tan': '#D4A373',
+      'beige': '#FAEDCD',
+      'sand': '#FEFAE0',
+    },
     fontFamily: {
       'alegreya': ['"Alegreya SC"'],
       'uncial': ['"Uncial Antiqua"'],

@@ -19,7 +19,7 @@ function classNames<T extends string | { [key: string]: boolean }>(
 
 export default function NavBar() {
   return (
-    <Disclosure as='nav' className='bg-sky-200'>
+    <Disclosure as='nav' className='bg-sand'>
       {({ open }) => (
         <>
           <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
