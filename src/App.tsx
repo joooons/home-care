@@ -2,6 +2,12 @@ import NavBar from './components/NavBar';
 
 import './App.css';
 
+import img1 from './assets/pexels-andrea-piacquadio-3768131.jpg';
+import img2 from './assets/pexels-andrea-piacquadio-3823497.jpg';
+import img3 from './assets/pexels-charlotte-may-5825576.jpg';
+import img4 from './assets/pexels-juliane-sanchez-20191410.jpg';
+import img5 from './assets/pexels-vlada-karpovich-5790837.jpg';
+
 function App() {
   return (
     <>
@@ -31,7 +37,7 @@ function App() {
             <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
               <img
                 className='object-cover w-full h-full'
-                src='./src/assets/pexels-andrea-piacquadio-3768131.jpg'
+                src={img1}
                 alt='Random Unsplash Image'
               />
             </div>
@@ -45,7 +51,7 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src='./src/assets/pexels-andrea-piacquadio-3823497.jpg'
+              src={img2}
               alt='Random Unsplash Image'
             />
           </div>
@@ -78,7 +84,7 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src='./src/assets/pexels-charlotte-may-5825576.jpg'
+              src={img3}
               alt='Random Unsplash Image'
             />
           </div>
@@ -112,7 +118,7 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src='./src/assets/pexels-juliane-sanchez-20191410.jpg'
+              src={img4}
               alt='Random Unsplash Image'
             />
           </div>
@@ -125,7 +131,7 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src='./src/assets/pexels-vlada-karpovich-5790837.jpg'
+              src={img5}
               alt='Random Unsplash Image'
             />
           </div>
