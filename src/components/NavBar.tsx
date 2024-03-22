@@ -51,7 +51,7 @@ export default function NavBar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          'text-gray-800 hover:bg-cyan-300 hover:text-white rounded-md px-4 py-3 text-xl font-medium font-bodoni'
+                          'text-gray-800 hover:bg-tan hover:text-white rounded-md px-4 py-3 text-xl font-medium font-bodoni'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -65,14 +65,14 @@ export default function NavBar() {
           </div>
 
           <Disclosure.Panel className='sm:hidden'>
-            <div className='space-y-1 px-2 pb-3 pt-2'>
+            <div className='space-y-1 bg-white px-2 pb-3 pt-2'>
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as='a'
                   href={item.href}
                   className={classNames(
-                    'text-gray-800 hover:bg-cyan-300 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
+                    'text-gray-800 hover:bg-tan hover:text-white block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

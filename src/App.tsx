@@ -24,25 +24,23 @@ function App() {
           />
         </div>
 
-        <div className='flex flex-row items-center justify-center p-24 '>
-          <div className='p-8'>
-            <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-green-800 m-3'>
+        <div className='flex flex-col md:flex-row items-center justify-center p-24 '>
+          <div className='w-full md:w-auto p-8'>
+            <h1 className='max-w-xl text-4xl text-left font-bold font-alegreya text-slate-700 m-3'>
               We'll take care of your loved ones
             </h1>
             <p className='text-left max-w-xl text-xl m-3'>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum vel
               repellendus necessitatibus delectus facere nisi dolore harum
               voluptate blanditiis quos nam debitis, assumenda enim vero
-              corrupti ut mollitia a temporibus hic! Unde possimus cumque
-              architecto dolore eveniet perspiciatis sed laborum blanditiis
-              sequi sunt repudiandae cum eligendi natus repellendus repellat,
-              labore non ab, ducimus modi.
+              corrupti ut mollitia a temporibus hic!
             </p>
             <div className='flex justify-start'>
               <button>DO SOMETHING</button>
             </div>
           </div>
-          <div className='p-8'>
+
+          <div className='hidden md:block md:w-auto p-8'>
             <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
               <img
                 className='object-cover w-full h-full'
@@ -66,7 +64,7 @@ function App() {
           </div>
         </div>
         <div className='p-8'>
-          <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-green-800 m-3'>
+          <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
             VISION
           </h1>
           <p className='max-w-xl text-left text-xl m-3'>
@@ -86,7 +84,7 @@ function App() {
       {/* WHAT WE DO */}
       <section className='flex flex-row items-center justify-center p-24 bg-beige'>
         <div className='p-8'>
-          <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-green-800 m-3'>
+          <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
             WHAT WE DO
           </h1>
           <p className='max-w-xl text-left text-xl m-3'>
@@ -120,7 +118,7 @@ function App() {
           </div>
         </div>
         <div className='p-8'>
-          <h1 className='text-6xl text-left font-bold font-alegreya text-green-800 m-3'>
+          <h1 className='text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
             TESTIMONIALS
           </h1>
           <p className='max-w-xl text-left text-xl m-3'>
@@ -136,7 +134,7 @@ function App() {
       {/* LOCATIONS */}
       <section className='flex flex-row items-center justify-center p-24 bg-beige'>
         <div className='p-8'>
-          <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-green-800 m-3'>
+          <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
             LOCATIONS
           </h1>
           <p className='max-w-xl text-left text-xl m-3'>
@@ -160,7 +158,7 @@ function App() {
       {/* CONTACT */}
       <section className='flex flex-row items-center justify-center p-24 bg-white'>
         <div className='p-8'>
-          <h1 className='max-w-xl text-6xl text-center font-bold font-alegreya text-green-800 m-3'>
+          <h1 className='max-w-xl text-6xl text-center font-bold font-alegreya text-slate-700 m-3'>
             CONTACT
           </h1>
           <p className='max-w-xl text-center text-xl m-3'>714 123 4566</p>
