@@ -1,6 +1,8 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
+import icon from '../assets/home-alt-svgrepo-com.svg';
+
 const navigation = [
   { name: 'Mission', href: '#', current: false },
   { name: 'Location', href: '#', current: false },
@@ -36,11 +38,7 @@ export default function NavBar() {
               </div>
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex flex-shrink-0 items-center'>
-                  <img
-                    className='h-8 w-auto'
-                    src='./src/assets/home-alt-svgrepo-com.svg'
-                    alt='Home Care'
-                  />
+                  <img className='h-8 w-auto' src={icon} alt='Home Care' />
                   <div className='text-gray-800 px-4 py-3 text-xl font-medium font-serif'>
                     HOME CARE
                   </div>
