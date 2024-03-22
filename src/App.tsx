@@ -7,6 +7,7 @@ import img2 from './assets/pexels-andrea-piacquadio-3823497.jpg';
 import img3 from './assets/pexels-charlotte-may-5825576.jpg';
 import img4 from './assets/pexels-juliane-sanchez-20191410.jpg';
 import img5 from './assets/pexels-vlada-karpovich-5790837.jpg';
+import img6 from './assets/pexels-pixabay-259588.jpg';
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
       <section>
         <div className='w-full overflow-hidden'>
           <img
-            className='w-screen object-cover absolute opacity-50 -z-10'
-            src={img1}
-            alt='Img1'
+            className='w-screen object-cover absolute opacity-25 -z-10'
+            src={img6}
+            alt='Img6'
           />
         </div>
 
