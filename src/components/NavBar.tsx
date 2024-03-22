@@ -39,8 +39,8 @@ export default function NavBar() {
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex flex-shrink-0 items-center'>
                   <img className='h-8 w-auto' src={icon} alt='Home Care' />
-                  <div className='text-gray-800 px-4 py-3 text-xl font-medium font-serif'>
-                    HOME CARE
+                  <div className='text-gray-800 px-4 py-3 text-xl font-medium font-bodoni'>
+                    HOME CARE CONCIERGE
                   </div>
                 </div>
 
