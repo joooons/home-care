@@ -14,7 +14,15 @@ function App() {
       <NavBar></NavBar>
 
       {/* TOP */}
-      <section className='bg-white'>
+      <section>
+        <div className='w-full overflow-hidden'>
+          <img
+            className='w-screen object-cover absolute opacity-50 -z-10'
+            src={img1}
+            alt='Img1'
+          />
+        </div>
+
         <div className='flex flex-row items-center justify-center p-24 '>
           <div className='p-8'>
             <h1 className='bg-wh text-6xl text-left font-bold text-green-800 m-3'>
