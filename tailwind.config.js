@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'alegreya': ['"Alegreya SC"'],
+      'uncial': ['"Uncial Antiqua"'],
+      'bodoni': ['"Bodoni Moda"']
+    },
+    extend: {
+      colors: {
+        'tan': '#D4A373',
+        'beige': '#FAEDCD',
+        'sand': '#FEFAE0',
+      },
+    },
   },
   plugins: [],
 }

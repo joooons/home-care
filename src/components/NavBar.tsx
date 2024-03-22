@@ -5,9 +5,8 @@ import icon from '../assets/home-alt-svgrepo-com.svg';
 
 const navigation = [
   { name: 'Mission', href: '#', current: false },
-  { name: 'Location', href: '#', current: false },
+  { name: 'What We Do', href: '#', current: false },
   { name: 'Testimonials', href: '#', current: false },
-  { name: 'Location', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ];
 
@@ -19,7 +18,7 @@ function classNames<T extends string | { [key: string]: boolean }>(
 
 export default function NavBar() {
   return (
-    <Disclosure as='nav' className='bg-sky-200'>
+    <Disclosure as='nav' className='w-full  absolute'>
       {({ open }) => (
         <>
           <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
@@ -39,8 +38,8 @@ export default function NavBar() {
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex flex-shrink-0 items-center'>
                   <img className='h-8 w-auto' src={icon} alt='Home Care' />
-                  <div className='text-gray-800 px-4 py-3 text-xl font-medium font-serif'>
-                    HOME CARE
+                  <div className='text-gray-800 px-4 py-3 text-xl font-medium font-bodoni'>
+                    HOME CARE CONCIERGE
                   </div>
                 </div>
 
@@ -51,7 +50,7 @@ export default function NavBar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          'text-gray-800 hover:bg-cyan-300 hover:text-white rounded-md px-4 py-3 text-xl font-medium'
+                          'text-gray-800 hover:bg-tan hover:text-white rounded-md px-4 py-3 text-xl font-medium font-bodoni'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -65,14 +64,14 @@ export default function NavBar() {
           </div>
 
           <Disclosure.Panel className='sm:hidden'>
-            <div className='space-y-1 px-2 pb-3 pt-2'>
+            <div className='space-y-1 bg-sand px-2 pb-3 pt-2'>
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as='a'
                   href={item.href}
                   className={classNames(
-                    'text-gray-800 hover:bg-cyan-300 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
+                    'text-gray-800 hover:bg-tan hover:text-white block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
