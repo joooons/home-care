@@ -1,7 +1,3 @@
-// import Section from './components/Section';
-// import Segment from './components/Segment';
-import RandomImg from './components/RandomImg';
-
 import './App.css';
 
 function App() {
@@ -42,7 +38,13 @@ function App() {
       {/* VISION */}
       <section className='flex flex-row items-center justify-center p-24 bg-sky-300 '>
         <div className='p-8'>
-          <RandomImg></RandomImg>
+          <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
+            <img
+              className='object-cover w-full h-full'
+              src='./src/assets/pexels-andrea-piacquadio-3823497.jpg'
+              alt='Random Unsplash Image'
+            />
+          </div>
         </div>
         <div className='p-8'>
           <h1 className='text-6xl text-left font-bold text-green-800 m-3'>
@@ -67,9 +69,15 @@ function App() {
       </section>
 
       {/* WHAT WE DO */}
-      <section className='flex flex-row items-center justify-center p-24 bg-sky-300 '>
+      <section className='flex flex-row items-center justify-center p-24 bg-white'>
         <div className='p-8'>
-          <RandomImg></RandomImg>
+          <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
+            <img
+              className='object-cover w-full h-full'
+              src='./src/assets/pexels-charlotte-may-5825576.jpg'
+              alt='Random Unsplash Image'
+            />
+          </div>
         </div>
         <div className='p-8'>
           <h1 className='text-6xl text-left font-bold text-green-800 m-3'>
@@ -84,8 +92,8 @@ function App() {
         </div>
       </section>
 
-      {/* BOTTOM */}
-      <section className='flex flex-row items-center justify-center p-24 bg-white'>
+      {/* TESTIMONIALS */}
+      <section className='flex flex-row items-center justify-center p-24 bg-sky-300'>
         <div className='p-8'>
           <h1 className='bg-wh text-6xl  text-left font-bold text-green-800 m-3'>
             TESTIMONIALS
@@ -97,14 +105,26 @@ function App() {
           </div>
         </div>
         <div className='p-8'>
-          <RandomImg></RandomImg>
+          <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
+            <img
+              className='object-cover w-full h-full'
+              src='./src/assets/pexels-juliane-sanchez-20191410.jpg'
+              alt='Random Unsplash Image'
+            />
+          </div>
         </div>
       </section>
 
       {/* LOCATIONS */}
-      <section className='flex flex-row items-center justify-center p-24 bg-sky-300'>
+      <section className='flex flex-row items-center justify-center p-24 bg-white'>
         <div className='p-8'>
-          <RandomImg></RandomImg>
+          <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
+            <img
+              className='object-cover w-full h-full'
+              src='./src/assets/pexels-vlada-karpovich-5790837.jpg'
+              alt='Random Unsplash Image'
+            />
+          </div>
         </div>
         <div className='p-8'>
           <h1 className='bg-wh text-6xl  text-left font-bold text-green-800 m-3'>
@@ -120,7 +140,7 @@ function App() {
       </section>
 
       {/* CONTACT */}
-      <section className='flex flex-row items-center justify-center p-24 bg-white'>
+      <section className='flex flex-row items-center justify-center p-24 bg-slate-200'>
         <div className='p-8'>
           <h1 className='bg-wh text-6xl  text-left font-bold text-green-800 m-3'>
             CONTACT
@@ -130,9 +150,6 @@ function App() {
           <div className='flex justify-start'>
             <button>DO SOMETHING</button>
           </div>
-        </div>
-        <div className='p-8'>
-          <RandomImg></RandomImg>
         </div>
       </section>
     </>
