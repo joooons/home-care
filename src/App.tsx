@@ -1,8 +1,12 @@
+import NavBar from './components/NavBar';
+
 import './App.css';
 
 function App() {
   return (
     <>
+      <NavBar></NavBar>
+
       {/* TOP */}
       <section className='bg-white'>
         <div className='flex flex-row items-center justify-center p-24 '>
