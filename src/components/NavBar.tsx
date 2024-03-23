@@ -23,7 +23,7 @@ export default function NavBar() {
         <>
 
           {/* NavBar  */}
-          <div className='bg-dark mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+          <div className='bg-gradient-to-r from-gray-900 from-5% via-dark via-50% to-gray-900 to-95% mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
             <div className='relative flex h-20 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
 
@@ -43,7 +43,7 @@ export default function NavBar() {
                 {/* Brand Name */}
                 <div className='flex flex-shrink-0 items-center'>
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className='text-light px-4 py-3 text-lg font-medium font-bodoni'>
+                  <div className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 from-5% via-yellow-300 via-50% to-yellow-600 to-95% px-4 py-3 text-lg font-medium font-bodoni'>
                     HOME CARE CONCIERGE
                   </div>
                 </div>
