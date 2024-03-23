@@ -2,13 +2,12 @@ import NavBar from './components/NavBar';
 
 import './App.css';
 
-import img1 from './assets/pexels-andrea-piacquadio-3768131.jpg';
-// import img2 from './assets/pexels-andrea-piacquadio-3823497.jpg';
-// import img3 from './assets/pexels-charlotte-may-5825576.jpg';
-import img4 from './assets/pexels-juliane-sanchez-20191410.jpg';
-import img5 from './assets/pexels-vlada-karpovich-5790837.jpg';
-// import img6 from './assets/pexels-pixabay-259588.jpg';
-import house from './assets/house.jpg';
+import img_convo from './assets/convo.jpg';
+// import img_hug from './assets/hug.jpg';
+// import img_flower from './assets/flower.jpg';
+import img_chile from './assets/chile.jpg';
+import img_stare from './assets/stare.jpg';
+import img_house from './assets/house.jpg';
 
 function App() {
   return (
@@ -26,8 +25,8 @@ function App() {
         <div className='w-full overflow-hidden'>
           <img
             className='h-full object-cover absolute opacity-50 -z-10'
-            src={house}
-            alt='house'
+            src={img_house}
+            alt='image of a house'
           />
         </div>
 
@@ -71,8 +70,8 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src={img1}
-              alt='Random Unsplash Image'
+              src={img_convo}
+              alt='image of a conversation'
             />
           </div>
         </div>
@@ -122,8 +121,8 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src={img5}
-              alt='Random Unsplash Image'
+              src={img_stare}
+              alt='image of two people staring at each other'
             />
           </div>
         </div>
@@ -141,8 +140,8 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src={img4}
-              alt='Random Unsplash Image'
+              src={img_chile}
+              alt='image of man holding a chile'
             />
           </div>
         </div>
