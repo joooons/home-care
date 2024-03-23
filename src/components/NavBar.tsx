@@ -23,8 +23,8 @@ export default function NavBar() {
         <>
 
           {/* NavBar  */}
-          <div className='bg-gradient-to-r from-gray-900 from-5% via-dark via-50% to-gray-900 to-95% mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
-            <div className='relative flex h-20 items-center justify-between'>
+          <div className='bg-gradient-to-r from-gray-900 from-0% via-dark via-50% to-gray-900 to-100% mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+            <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
 
                 {/* Mobile menu button*/}
@@ -49,14 +49,14 @@ export default function NavBar() {
                 </div>
 
                 {/* Desktop Menu Items */}
-                <div className='hidden sm:ml-6 sm:block'>
+                <div className='hidden sm:ml-6 sm:block sm:py-4'>
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          'text-light hover:bg-white/30 hover:text-white rounded-md px-2 py-3 font-medium font-bodoni whitespace-nowrap'
+                          'text-light text-sm hover:bg-white/30 hover:text-white rounded-md px-2 py-3 font-medium font-bodoni whitespace-nowrap'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -71,14 +71,14 @@ export default function NavBar() {
 
           {/* Mobile Menu Items */}
           <Disclosure.Panel className='sm:hidden'>
-            <div className='space-y-1 bg-dark/90 px-2 pb-3 pt-2'>
+            <div className='space-y-1 bg-gradient-to-r from-gray-900/95 from-0% via-dark/95 via-50% to-gray-900/95 to-100% px-2 pb-3 pt-2'>
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as='a'
                   href={item.href}
                   className={classNames(
-                    'text-light hover:bg-white/30 hover:text-light block rounded-md px-3 py-4 text-xl font-medium font-bodoni'
+                    'text-light hover:bg-white/30 hover:text-light block rounded-md px-3 py-4 text-lg font-medium font-bodoni'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
