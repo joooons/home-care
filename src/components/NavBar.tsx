@@ -56,7 +56,7 @@ export default function NavBar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          'text-light hover:bg-white/30 hover:text-white rounded-md px-4 py-3 text-lg font-medium font-bodoni'
+                          'text-light hover:bg-white/30 hover:text-white rounded-md px-2 py-3 font-medium font-bodoni whitespace-nowrap'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -78,7 +78,7 @@ export default function NavBar() {
                   as='a'
                   href={item.href}
                   className={classNames(
-                    'text-light hover:bg-white/30 hover:text-light block rounded-md px-3 py-2 text-base font-medium'
+                    'text-light hover:bg-white/30 hover:text-light block rounded-md px-3 py-4 text-xl font-medium font-bodoni'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
