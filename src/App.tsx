@@ -14,7 +14,13 @@ function App() {
     <>
       <NavBar></NavBar>
 
-      {/* TOP */}
+      {/* //  MM    MM  MMMMMMMM  MMMMMM      MMMM    
+          //  MM    MM  MM        MM    MM  MM    MM  
+          //  MMMMMMMM  MMMMMMMM  MMMMMM    MM    MM  
+          //  MM    MM  MM        MM    MM  MM    MM  
+          //  MM    MM  MM        MM    MM  MM    MM  
+          //  MM    MM  MMMMMMMM  MM    MM    MMMM     */}
+
       <section>
         <div className='w-full overflow-hidden'>
           <img
@@ -52,7 +58,13 @@ function App() {
         </div>
       </section>
 
-      {/* VISION */}
+      {/* //  MM      MM  MMMMMM    MMMM    MMMMMM    MMMM    MM    MM  
+          //  MM      MM    MM    MM    MM    MM    MM    MM  MMMM  MM  
+          //  MM      MM    MM      MM        MM    MM    MM  MM  MMMM  
+          //  MM      MM    MM        MM      MM    MM    MM  MM    MM  
+          //    MM  MM      MM    MM    MM    MM    MM    MM  MM    MM  
+          //      MM      MMMMMM    MMMM    MMMMMM    MMMM    MM    MM   */}
+
       <section className='flex flex-col md:flex-row items-center justify-center p-24 bg-sand'>
         <div className='w-full md:w-auto p-8'>
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
@@ -82,9 +94,15 @@ function App() {
         </div>
       </section>
 
-      {/* WHAT WE DO */}
-      <section className='flex flex-row items-center justify-center p-24 bg-white'>
-        <div className='p-8'>
+      {/* //  MM      MM  MM    MM    MMMM    MMMMMM  
+          //  MM      MM  MM    MM  MM    MM    MM    
+          //  MM      MM  MMMMMMMM  MMMMMMMM    MM    
+          //  MM  MM  MM  MM    MM  MM    MM    MM    
+          //  MM  MM  MM  MM    MM  MM    MM    MM    
+          //    MM  MM    MM    MM  MM    MM    MM     */}
+
+      <section className='flex flex-col md:flex-row items-center justify-center p-24 bg-white'>
+        <div className='w-full md:w-auto p-8'>
           <h1 className='max-w-xl text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
             WHAT WE DO
           </h1>
@@ -99,7 +117,7 @@ function App() {
             <button>DO SOMETHING</button>
           </div>
         </div>
-        <div className='p-8'>
+        <div className='w-full md:w-auto p-8'>
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
@@ -110,9 +128,15 @@ function App() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className='flex flex-row items-center justify-center p-24 bg-sand'>
-        <div className='p-8'>
+      {/* //  MMMMMM  MMMMMMMM    MMMM    MMMMMM  MMMMMM  MM      MM  
+          //    MM    MM        MM    MM    MM      MM    MMMM  MMMM  
+          //    MM    MMMMMMMM    MM        MM      MM    MM  MM  MM  
+          //    MM    MM            MM      MM      MM    MM      MM  
+          //    MM    MM        MM    MM    MM      MM    MM      MM  
+          //    MM    MMMMMMMM    MMMM      MM    MMMMMM  MM      MM   */}
+
+      <section className='flex flex-col md:flex-row items-center justify-center p-24 bg-sand'>
+        <div className='w-full md:w-auto p-8'>
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
@@ -121,7 +145,7 @@ function App() {
             />
           </div>
         </div>
-        <div className='p-8'>
+        <div className='w-full md:w-auto p-8'>
           <h1 className='text-6xl text-left font-bold font-alegreya text-slate-700 m-3'>
             TESTIMONIALS
           </h1>
@@ -135,7 +159,13 @@ function App() {
         </div>
       </section>
 
-      {/* CONTACT */}
+      {/* //    MMMM      MMMM    MM    MM  MMMMMM    MMMM      MMMM    MMMMMM  
+          //  MM    MM  MM    MM  MMMM  MM    MM    MM    MM  MM    MM    MM    
+          //  MM        MM    MM  MM  MMMM    MM    MMMMMMMM  MM          MM    
+          //  MM        MM    MM  MM    MM    MM    MM    MM  MM          MM    
+          //  MM    MM  MM    MM  MM    MM    MM    MM    MM  MM    MM    MM    
+          //    MMMM      MMMM    MM    MM    MM    MM    MM    MMMM      MM     */}
+
       <section className='flex flex-row items-center justify-center p-24 bg-white'>
         <div className='p-8'>
           <h1 className='max-w-xl text-6xl text-center font-bold font-alegreya text-slate-700 m-3'>
