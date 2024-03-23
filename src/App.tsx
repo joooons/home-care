@@ -3,11 +3,12 @@ import NavBar from './components/NavBar';
 import './App.css';
 
 import img1 from './assets/pexels-andrea-piacquadio-3768131.jpg';
-import img2 from './assets/pexels-andrea-piacquadio-3823497.jpg';
-import img3 from './assets/pexels-charlotte-may-5825576.jpg';
+// import img2 from './assets/pexels-andrea-piacquadio-3823497.jpg';
+// import img3 from './assets/pexels-charlotte-may-5825576.jpg';
 import img4 from './assets/pexels-juliane-sanchez-20191410.jpg';
-// import img5 from './assets/pexels-vlada-karpovich-5790837.jpg';
-import img6 from './assets/pexels-pixabay-259588.jpg';
+import img5 from './assets/pexels-vlada-karpovich-5790837.jpg';
+// import img6 from './assets/pexels-pixabay-259588.jpg';
+import house from './assets/house.jpg';
 
 function App() {
   return (
@@ -24,9 +25,9 @@ function App() {
       <section>
         <div className='w-full overflow-hidden'>
           <img
-            className='w-screen object-cover absolute opacity-10 -z-10'
-            src={img6}
-            alt='Img6'
+            className='h-full object-cover absolute opacity-50 -z-10'
+            src={house}
+            alt='house'
           />
         </div>
 
@@ -46,7 +47,7 @@ function App() {
             </div>
           </div>
 
-          <div className='hidden md:block md:w-auto p-8'>
+          {/* <div className='hidden md:block md:w-auto p-8'>
             <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
               <img
                 className='object-cover w-full h-full'
@@ -54,7 +55,7 @@ function App() {
                 alt='Random Unsplash Image'
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -70,7 +71,7 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src={img2}
+              src={img1}
               alt='Random Unsplash Image'
             />
           </div>
@@ -121,7 +122,7 @@ function App() {
           <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
-              src={img3}
+              src={img5}
               alt='Random Unsplash Image'
             />
           </div>
