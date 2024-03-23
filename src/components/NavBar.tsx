@@ -18,13 +18,13 @@ function classNames<T extends string | { [key: string]: boolean }>(
 
 export default function NavBar() {
   return (
-    <Disclosure as='nav' className='w-full absolute '>
+    <Disclosure as='nav' className='bg-gradient-to-r from-gray-900 from-0% via-dark via-50% to-gray-900 to-100% w-full absolute '>
       {({ open }) => (
         <>
 
           {/* NavBar  */}
-          <div className='bg-gradient-to-r from-gray-900 from-0% via-dark via-50% to-gray-900 to-100% mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
-            <div className='relative flex h-16 items-center justify-between'>
+          <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+            <div className='relative flex h-24 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
 
                 {/* Mobile menu button*/}
@@ -43,7 +43,7 @@ export default function NavBar() {
                 {/* Brand Name */}
                 <div className='flex flex-shrink-0 items-center'>
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 from-5% via-yellow-300 via-50% to-yellow-600 to-95% px-4 py-3 text-lg font-medium font-bodoni'>
+                  <div className='text-transparent bg-clip-text bg-gradient-to-r from-sky-400 from-5% via-sky-200 via-50% to-sky-400 to-95% px-4 py-3 text-3xl font-medium font-bodoni'>
                     HOME CARE CONCIERGE
                   </div>
                 </div>
@@ -56,7 +56,7 @@ export default function NavBar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          'text-light text-sm hover:bg-white/30 hover:text-white rounded-md px-2 py-3 font-medium font-bodoni whitespace-nowrap'
+                          'text-light text-xl hover:bg-white/30 hover:text-white rounded-md px-2 py-3 font-medium font-bodoni whitespace-nowrap'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
