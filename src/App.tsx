@@ -21,8 +21,8 @@ function App() {
           //  MM    MM  MM        MM    MM  MM    MM  
           //  MM    MM  MMMMMMMM  MM    MM    MMMM     */}
 
-      <section>
-        <div className='w-full overflow-hidden'>
+      <section className='items-center justify-center'>
+        <div className='overflow-hidden'>
           <img
             className='h-full object-cover absolute opacity-50 -z-10'
             src={img_house}
@@ -30,22 +30,21 @@ function App() {
           />
         </div>
 
-        <div className='flex flex-col md:flex-row items-center justify-center p-24 '>
-          <div className='w-full md:w-auto p-8'>
-            <h1 className='max-w-xl text-4xl text-left font-bold font-alegreya text-slate-700 m-3'>
+        <div className='flex flex-col items-center justify-center px-16 pt-24 pb-20'>
+            <h1 className='max-w-xl text-3xl text-center font-bold font-alegreya text-dark m-3'>
               We'll take care of your loved ones
             </h1>
-            <p className='text-left max-w-xl text-xl m-3'>
+            <p className='text-center text-dark max-w-xl m-3'>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum vel
               repellendus necessitatibus delectus facere nisi dolore harum
               voluptate blanditiis quos nam debitis, assumenda enim vero
               corrupti ut mollitia a temporibus hic!
             </p>
-            <div className='flex justify-start'>
-              <button>DO SOMETHING</button>
+            <div className='flex justify-center'>
+              <button>LEARN MORE</button>
             </div>
-          </div>
-
+          
+          {/* Hero Image - temporarily disabled */}
           {/* <div className='hidden md:block md:w-auto p-8'>
             <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
               <img
