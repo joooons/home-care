@@ -18,14 +18,15 @@ function classNames<T extends string | { [key: string]: boolean }>(
 
 export default function NavBar() {
   return (
-    <Disclosure as='nav' className='bg-gradient-to-r from-gray-900 from-0% via-dark via-50% to-gray-900 to-100% w-full absolute '>
+    <Disclosure as='nav' className='w-full absolute '>
       {({ open }) => (
         <>
 
           {/* NavBar  */}
-          <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+          <div className='h-24 bg-gradient-to-r from-gray-900 from-0% via-dark via-50% to-gray-900 to-100% w-full absolute '></div>
+          <div className='mx-auto max-w-7xl px-2 lg:px-6'>
             <div className='relative flex h-24 items-center justify-between'>
-              <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
+              <div className='absolute inset-y-0 left-0 flex items-center lg:hidden'>
 
                 {/* Mobile menu button*/}
                 <Disclosure.Button className='relative inline-flex items-center justify-center rounded-md p-2 text-light hover:bg-white/50 focus:outline-none focus-visible:ring focus-visible:ring-purple-50/0'>
@@ -38,7 +39,7 @@ export default function NavBar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
+              <div className='flex flex-1 items-center justify-center lg:items-stretch lg:justify-start'>
 
                 {/* Brand Name */}
                 <div className='flex flex-shrink-0 items-center'>
@@ -49,7 +50,7 @@ export default function NavBar() {
                 </div>
 
                 {/* Desktop Menu Items */}
-                <div className='hidden sm:ml-6 sm:block sm:py-4'>
+                <div className='hidden lg:ml-6 lg:block lg:py-4'>
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
                       <a
@@ -70,8 +71,8 @@ export default function NavBar() {
           </div>
 
           {/* Mobile Menu Items */}
-          <Disclosure.Panel className='sm:hidden'>
-            <div className='space-y-1 bg-gradient-to-r from-gray-900/95 from-0% via-dark/95 via-50% to-gray-900/95 to-100% px-2 pb-3 pt-2'>
+          <Disclosure.Panel className='lg:hidden'>
+            <div className='space-y-1 bg-gradient-to-r from-gray-900/90 from-0% via-dark/90 via-50% to-gray-900/90 to-100% px-2 pb-3 pt-2'>
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
