@@ -11,6 +11,8 @@ import img_house from './assets/house.jpg';
 
 // import img_line_wave from './assets/line-wave.jpg';
 // import img_line_minim from './assets/line-minim.jpg';
+// import img_line_couch from './assets/line-couch.jpg';
+// import img_abstract from './assets/abstract.jpg';
 
 function App() {
   return (
@@ -24,16 +26,13 @@ function App() {
           //  MM    MM  MM        MM    MM  MM    MM  
           //  MM    MM  MMMMMMMM  MM    MM    MMMM     */}
 
-      <section className='items-center justify-center'>
-        <div className='overflow-hidden'>
-          <img
-            className='h-full object-cover absolute opacity-40 -z-10'
-            src={img_house}
-            alt='image of a house'
-          />
-        </div>
-
-        <div className='flex flex-col items-center justify-center px-16 pt-24 pb-20'>
+      <section className='relative items-center justify-center -z-10'>
+        <img
+          className='absolute inset-0 object-cover h-full w-full opacity-25 -z-10'
+          src={img_house}
+          alt='image of a house'
+        />
+        <div className='flex flex-col items-center justify-center h-screen px-16 pt-24 pb-20'>
           <h1 className='max-w-xl text-3xl text-center font-bold font-alegreya text-dark m-3'>
             We'll take care of your loved ones
           </h1>
@@ -43,22 +42,8 @@ function App() {
           <div className='flex justify-center'>
             <button className='bg-beige'>LEARN MORE</button>
           </div>
-          
-          {/* Hero Image - temporarily disabled */}
-          {/* <div className='hidden md:block md:w-auto p-8'>
-            <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
-              <img
-                className='object-cover w-full h-full'
-                src={img1}
-                alt='Random Unsplash Image'
-              />
-            </div>
-          </div> */}
         </div>
       </section>
-
-
-      
 
       {/* //  MM      MM  MMMMMM    MMMM    MMMMMM    MMMM    MM    MM  
           //  MM      MM    MM    MM    MM    MM    MM    MM  MMMM  MM  

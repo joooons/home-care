@@ -44,7 +44,7 @@ export default function NavBar() {
                 <div className='flex flex-shrink-0 items-center'>
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
                   <div className='text-transparent bg-clip-text bg-gradient-to-r from-sky-400 from-5% via-sky-200 via-50% to-sky-400 to-95% px-4 py-3 text-3xl font-medium font-bodoni'>
-                    HOME CARE CONCIERGE
+                    Age Well Care Consultants
                   </div>
                 </div>
 
