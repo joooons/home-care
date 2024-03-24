@@ -9,10 +9,10 @@ import img_chile from './assets/chile.jpg';
 import img_stare from './assets/stare.jpg';
 import img_house from './assets/house.jpg';
 
-// import img_line_wave from './assets/line-wave.jpg';
+import img_line_wave from './assets/line-wave.jpg';
 // import img_line_minim from './assets/line-minim.jpg';
 // import img_line_couch from './assets/line-couch.jpg';
-// import img_abstract from './assets/abstract.jpg';
+import img_abstract from './assets/abstract.jpg';
 
 function App() {
   return (
@@ -84,7 +84,13 @@ function App() {
           //  MM  MM  MM  MM    MM  MM    MM    MM    
           //    MM  MM    MM    MM  MM    MM    MM     */}
 
-      <section className='flex flex-col md:flex-row items-center justify-center p-24 bg-white'>
+      <section className='relative flex flex-col md:flex-row items-center justify-center p-24 '>
+        <img
+          className='absolute inset-0 object-cover h-full w-full opacity-20 -z-10'
+          src={img_line_wave}
+          alt='image of a house'
+        />
+
         <div className='w-full md:w-auto p-8'>
           <h1 className='max-w-xl text-3xl text-left font-bold font-alegreya text-dark m-3'>
             WHAT WE DO
@@ -143,7 +149,12 @@ function App() {
           //  MM    MM  MM    MM  MM    MM    MM    MM    MM  MM    MM    MM    
           //    MMMM      MMMM    MM    MM    MM    MM    MM    MMMM      MM     */}
 
-      <section className='flex flex-row items-center justify-center p-24 bg-white'>
+      <section className='relative flex flex-row items-center justify-center p-24'>
+        <img
+          className='absolute inset-0 object-cover h-full w-full opacity-50 -z-10'
+          src={img_abstract}
+          alt='image of a house'
+        />
         <div className='p-8'>
           <h1 className='max-w-xl text-3xl text-center font-bold font-alegreya text-dark m-3'>
             CONTACT
