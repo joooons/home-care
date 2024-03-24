@@ -52,19 +52,17 @@ function App() {
           //    MM  MM      MM    MM    MM    MM    MM    MM  MM    MM  
           //      MM      MMMMMM    MMMM    MMMMMM    MMMM    MM    MM   */}
 
-      <section className='flex flex-col md:flex-row items-center justify-center p-24 bg-gradient-to-r from-sky-200 from-5% via-sky-300 via-50% to-sky-400 to-95%'>
-        <div className='w-full md:w-auto p-8'>
-          <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
+      <section className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center bg-gradient-to-r from-sky-200 from-5% via-sky-300 via-50% to-sky-400 to-95%'>
+        <div className='w-full md:w-auto overflow-hidden bg-white'>
             <img
               className='object-cover w-full h-full'
               src={img_convo}
               alt='image of a conversation'
             />
-          </div>
         </div>
 
         <div className='w-full md:w-auto p-8'>
-          <h1 className='max-w-xl text-3xl text-left font-bold font-alegreya text-dark m-3'>
+          <h1 className='max-w-xl text-3xl md:text-4xl text-left font-bold font-alegreya text-dark m-3'>
             VISION
           </h1>
           <p className='max-w-xl text-left text-dark m-3'>
@@ -73,6 +71,9 @@ function App() {
           <p className='max-w-xl text-left text-dark m-3'>
             Every family member deserves to be taken care of. We promise to
             treat everyone like family.
+          </p>
+          <p className='max-w-xl text-left text-dark m-3'>
+            That's what we're all about.
           </p>
         </div>
       </section>
@@ -84,15 +85,24 @@ function App() {
           //  MM  MM  MM  MM    MM  MM    MM    MM    
           //    MM  MM    MM    MM  MM    MM    MM     */}
 
-      <section className='relative flex flex-col md:flex-row items-center justify-center p-24 '>
+      <section className='relative items-center justify-center p-12'>
         <img
           className='absolute inset-0 object-cover h-full w-full opacity-20 -z-10'
           src={img_line_wave}
           alt='image of a house'
         />
-
-        <div className='w-full md:w-auto p-8'>
-          <h1 className='max-w-xl text-3xl text-left font-bold font-alegreya text-dark m-3'>
+        <div className='relative grid grid-cols-1 lg:grid-cols-2 items-center justify-center'>
+        <div className='p-10 md:p-0 w-full md:w-auto '>
+          <div className='rounded-full aspect-square bg-blue-500 overflow-hidden'>
+            <img
+              className='object-cover w-full h-full'
+              src={img_stare}
+              alt='image of two people staring at each other'
+            />
+          </div>
+        </div>
+        <div className='w-full lg:order-first md:w-auto p-8 '>
+          <h1 className='max-w-xl text-3xl md:text-4xl text-left font-bold font-alegreya text-dark m-3'>
             WHAT WE DO
           </h1>
           <p className='max-w-xl text-left text-dark m-3'>
@@ -103,15 +113,9 @@ function App() {
             We serve homes in Whittier, La Mirada, and Fullerton.
           </p>
         </div>
-        <div className='w-full md:w-auto p-8'>
-          <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
-            <img
-              className='object-cover w-full h-full'
-              src={img_stare}
-              alt='image of two people staring at each other'
-            />
-          </div>
         </div>
+
+        
       </section>
 
       {/* //  MMMMMM  MMMMMMMM    MMMM    MMMMMM  MMMMMM  MM      MM  
@@ -121,9 +125,9 @@ function App() {
           //    MM    MM        MM    MM    MM      MM    MM      MM  
           //    MM    MMMMMMMM    MMMM      MM    MMMMMM  MM      MM   */}
 
-      <section className='flex flex-col md:flex-row items-center justify-center p-24 bg-gradient-to-r from-sky-400 from-5% via-sky-300 via-50% to-sky-200 to-95%'>
-        <div className='w-full md:w-auto p-8'>
-          <div className='rounded-full size-96 bg-blue-500 overflow-hidden'>
+      <section className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center p-12 bg-gradient-to-r from-sky-400 from-5% via-sky-300 via-50% to-sky-200 to-95%'>
+        <div className='p-10 md:p-0 w-full md:w-auto'>
+          <div className='rounded-full aspect-square bg-blue-500 overflow-hidden'>
             <img
               className='object-cover w-full h-full'
               src={img_chile}
@@ -132,7 +136,7 @@ function App() {
           </div>
         </div>
         <div className='w-full md:w-auto p-8'>
-          <h1 className='text-3xl text-left font-bold font-alegreya text-dark m-3'>
+          <h1 className='text-3xl md:text-4xl text-left font-bold font-alegreya text-dark m-3'>
             TESTIMONIALS
           </h1>
           <p className='max-w-xl text-left text-dark m-3'>
@@ -156,7 +160,7 @@ function App() {
           alt='image of a house'
         />
         <div className='p-8'>
-          <h1 className='max-w-xl text-3xl text-center font-bold font-alegreya text-dark m-3'>
+          <h1 className='max-w-xl text-3xl md:text-4xl text-center font-bold font-alegreya text-dark m-3'>
             CONTACT
           </h1>
           <p className='max-w-xl text-center text-dark m-3'>714 123 4566</p>
