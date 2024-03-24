@@ -3,8 +3,8 @@ import NavBar from "./components/NavBar"
 import "./App.css"
 
 import img_convo from "./assets/convo.jpg"
-// import img_hug from './assets/hug.jpg';
-// import img_flower from './assets/flower.jpg';
+import img_hug from "./assets/hug.jpg"
+import img_flower from "./assets/flower.jpg"
 import img_chile from "./assets/chile.jpg"
 import img_stare from "./assets/stare.jpg"
 import img_house from "./assets/house.jpg"
@@ -100,7 +100,7 @@ function App() {
           //  MM  MM  MM  MM    MM  MM    MM    MM    
           //    MM  MM    MM    MM  MM    MM    MM     */}
 
-      <section id="what" className="relative items-center justify-center p-12">
+      <section id="what" className="relative items-center justify-center">
         <img
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-20"
           src={img_line_wave}
@@ -108,7 +108,7 @@ function App() {
         />
         <div className="relative grid grid-cols-1 items-center justify-center lg:grid-cols-2">
           <div className="w-full p-10 md:w-auto md:p-0 ">
-            <div className="aspect-square overflow-hidden rounded-full bg-blue-500">
+            <div className="m-12 aspect-square overflow-hidden rounded-full bg-blue-500 lg:m-24">
               <img
                 className="h-full w-full object-cover"
                 src={img_stare}
@@ -116,7 +116,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="w-full p-8 md:w-auto lg:order-first ">
+          <div className="w-full px-24 pb-12 md:w-auto lg:order-first lg:pb-0 ">
             <h1 className="m-3 max-w-xl text-left font-alegreya text-3xl font-bold text-dark md:text-4xl">
               WHAT WE DO
             </h1>
@@ -140,25 +140,53 @@ function App() {
 
       <section
         id="testimony"
-        className="grid grid-cols-1 items-center justify-center bg-gradient-to-r from-sky-200 from-5% via-sky-300 via-50% to-sky-400 to-95% p-12 lg:grid-cols-2"
+        className="flex flex-col justify-center bg-sky-300 p-12"
       >
-        <div className="w-full p-10 md:w-auto md:p-0">
-          <div className="aspect-square overflow-hidden rounded-full bg-blue-500">
-            <img
-              className="h-full w-full object-cover"
-              src={img_chile}
-              alt="image of man holding a chile"
-            />
+        <h1 className="mb-12 text-center font-alegreya text-3xl font-bold text-dark md:text-4xl">
+          TESTIMONIALS
+        </h1>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
+          <div className="pb-12">
+            <div className="w-full overflow-hidden rounded-3xl bg-white md:w-auto">
+              <img
+                className="aspect-video h-full w-full object-cover"
+                src={img_hug}
+                alt="image of a conversation"
+              />
+            </div>
+            <h3 className="p-4 text-xl">
+              "I couldn't have done this without yall nice people."
+            </h3>
+            <div className="text-xl">Albert</div>
           </div>
-        </div>
-        <div className="w-full p-8 md:w-auto">
-          <h1 className="m-3 text-left font-alegreya text-3xl font-bold text-dark md:text-4xl">
-            TESTIMONIALS
-          </h1>
-          <p className="m-3 max-w-xl text-left text-dark">
-            "This was the best thing that happened to me ever!"
-          </p>
-          <p className="m-3 max-w-xl text-right text-dark">- John Smith</p>
+          <div className="pb-12">
+            <div className="w-full overflow-hidden rounded-3xl bg-white md:w-auto">
+              <img
+                className="aspect-video h-full w-full object-cover"
+                src={img_flower}
+                alt="image of a conversation"
+              />
+            </div>
+            <h3 className="p-4 text-xl">
+              "I felt so reassured by the warmth and professionalism that each
+              of the consultants possessed."
+            </h3>
+            <div className="text-xl">Barbara</div>
+          </div>
+          <div className="pb-12">
+            <div className="w-full overflow-hidden rounded-3xl bg-white md:w-auto">
+              <img
+                className="aspect-video h-full w-full object-cover"
+                src={img_chile}
+                alt="image of a conversation"
+              />
+            </div>
+            <h3 className="p-4 text-xl">
+              "Their service really took a heavy weight off of our backs. My
+              parents love spending more time with their grandchildren."
+            </h3>
+            <div className="text-xl">Charlie</div>
+          </div>
         </div>
       </section>
 
@@ -171,7 +199,7 @@ function App() {
 
       <section
         id="contact"
-        className="relative flex flex-row items-center justify-center p-24"
+        className="relative flex flex-row items-center justify-center pb-48 pt-12"
       >
         <img
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
