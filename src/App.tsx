@@ -14,6 +14,11 @@ import img_line_wave from "./assets/line-wave.jpg"
 import img_abstract from "./assets/abstract.jpg"
 
 function App() {
+  const handleClick = (section: string) => {
+    console.log("sup")
+    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <>
       <NavBar></NavBar>
@@ -25,7 +30,7 @@ function App() {
           //  MM    MM  MM        MM    MM  MM    MM  
           //  MM    MM  MMMMMMMM  MM    MM    MMMM     */}
 
-      <section className="relative -z-10 items-center justify-center">
+      <section className="relative items-center justify-center">
         <img
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
           src={img_house}
@@ -42,7 +47,12 @@ function App() {
             support their independence and well-being.
           </p>
           <div className="flex justify-center">
-            <button className="bg-sky-500 text-light">LEARN MORE</button>
+            <button
+              className="bg-sky-500 text-light hover:bg-sky-600"
+              onClick={() => handleClick("vision")}
+            >
+              LEARN MORE
+            </button>
           </div>
         </div>
       </section>
@@ -54,7 +64,10 @@ function App() {
           //    MM  MM      MM    MM    MM    MM    MM    MM  MM    MM  
           //      MM      MMMMMM    MMMM    MMMMMM    MMMM    MM    MM   */}
 
-      <section className="grid grid-cols-1 items-center justify-center bg-gradient-to-r from-sky-400 from-5% via-sky-300 via-50% to-sky-200 to-95% lg:grid-cols-2">
+      <section
+        id="vision"
+        className="grid grid-cols-1 items-center justify-center bg-gradient-to-r from-sky-400 from-5% via-sky-300 via-50% to-sky-200 to-95% lg:grid-cols-2"
+      >
         <div className="w-full overflow-hidden bg-white md:w-auto">
           <img
             className="h-full w-full object-cover"
@@ -87,7 +100,7 @@ function App() {
           //  MM  MM  MM  MM    MM  MM    MM    MM    
           //    MM  MM    MM    MM  MM    MM    MM     */}
 
-      <section className="relative items-center justify-center p-12">
+      <section id="what" className="relative items-center justify-center p-12">
         <img
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-20"
           src={img_line_wave}
@@ -125,7 +138,10 @@ function App() {
           //    MM    MM        MM    MM    MM      MM    MM      MM  
           //    MM    MMMMMMMM    MMMM      MM    MMMMMM  MM      MM   */}
 
-      <section className="grid grid-cols-1 items-center justify-center bg-gradient-to-r from-sky-200 from-5% via-sky-300 via-50% to-sky-400 to-95% p-12 lg:grid-cols-2">
+      <section
+        id="testimony"
+        className="grid grid-cols-1 items-center justify-center bg-gradient-to-r from-sky-200 from-5% via-sky-300 via-50% to-sky-400 to-95% p-12 lg:grid-cols-2"
+      >
         <div className="w-full p-10 md:w-auto md:p-0">
           <div className="aspect-square overflow-hidden rounded-full bg-blue-500">
             <img
@@ -153,7 +169,10 @@ function App() {
           //  MM    MM  MM    MM  MM    MM    MM    MM    MM  MM    MM    MM    
           //    MMMM      MMMM    MM    MM    MM    MM    MM    MMMM      MM     */}
 
-      <section className="relative flex flex-row items-center justify-center p-24">
+      <section
+        id="contact"
+        className="relative flex flex-row items-center justify-center p-24"
+      >
         <img
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
           src={img_abstract}
