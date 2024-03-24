@@ -33,7 +33,7 @@ function App() {
           alt='image of a house'
         />
         <div className='flex flex-col items-center justify-center h-screen px-16 pt-24 pb-20'>
-          <h1 className='max-w-xl text-3xl text-center font-bold font-alegreya text-dark m-3'>
+          <h1 className='max-w-xl text-2xl lg:text-4xl text-center font-bold font-alegreya text-dark m-3'>
             We'll take care of your loved ones
           </h1>
           <p className='text-center text-dark max-w-xl m-3'>
