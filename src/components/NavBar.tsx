@@ -64,7 +64,7 @@ export default function NavBar() {
                       <a
                         key={item.name}
                         className={classNames(
-                          "whitespace-nowrap rounded-md px-2 py-3 font-bodoni text-xl font-medium text-light hover:bg-white/30 hover:text-white"
+                          "cursor-pointer whitespace-nowrap rounded-md px-2 py-3 font-bodoni text-xl font-medium text-light hover:bg-white/30 hover:text-white"
                         )}
                         aria-current={item.current ? "page" : undefined}
                         onClick={() => handleClick(item.scrollto)}
@@ -86,7 +86,7 @@ export default function NavBar() {
                   key={item.name}
                   as="a"
                   className={classNames(
-                    "block rounded-md px-3 py-4 font-bodoni text-lg font-medium text-light hover:bg-white/30 hover:text-light"
+                    "block cursor-pointer rounded-md px-3 py-4 font-bodoni text-lg font-medium text-light hover:bg-white/30 hover:text-light"
                   )}
                   aria-current={item.current ? "page" : undefined}
                   onClick={() => handleClick(item.scrollto)}
