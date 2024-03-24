@@ -40,7 +40,7 @@ function App() {
           As a compassionate home care concierge service, we offer personalized care in the comfort of our clients' homes, focusing on daily activities, medication management, and companionship to support their independence and well-being.
           </p>
           <div className='flex justify-center'>
-            <button className='bg-beige'>LEARN MORE</button>
+            <button className='bg-sky-500 text-light'>LEARN MORE</button>
           </div>
         </div>
       </section>
@@ -52,7 +52,7 @@ function App() {
           //    MM  MM      MM    MM    MM    MM    MM    MM  MM    MM  
           //      MM      MMMMMM    MMMM    MMMMMM    MMMM    MM    MM   */}
 
-      <section className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center bg-gradient-to-r from-sky-200 from-5% via-sky-300 via-50% to-sky-400 to-95%'>
+      <section className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center bg-gradient-to-r from-sky-400 from-5% via-sky-300 via-50% to-sky-200 to-95%'>
         <div className='w-full md:w-auto overflow-hidden bg-white'>
             <img
               className='object-cover w-full h-full'
@@ -125,7 +125,7 @@ function App() {
           //    MM    MM        MM    MM    MM      MM    MM      MM  
           //    MM    MMMMMMMM    MMMM      MM    MMMMMM  MM      MM   */}
 
-      <section className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center p-12 bg-gradient-to-r from-sky-400 from-5% via-sky-300 via-50% to-sky-200 to-95%'>
+      <section className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center p-12 bg-gradient-to-r from-sky-200 from-5% via-sky-300 via-50% to-sky-400 to-95%'>
         <div className='p-10 md:p-0 w-full md:w-auto'>
           <div className='rounded-full aspect-square bg-blue-500 overflow-hidden'>
             <img
