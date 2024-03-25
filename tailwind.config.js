@@ -6,9 +6,9 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'alegreya': ['"Alegreya SC"'],
-      'uncial': ['"Uncial Antiqua"'],
-      'bodoni': ['"Bodoni Moda"']
+      'alegreya': ['"Alegreya Sans"'],
+      'bodoni': ['"Libre Bodoni"'],
+      'merriweather': ['"Merriweather"']
     },
     extend: {
       colors: {
