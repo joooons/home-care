@@ -70,7 +70,7 @@ function App() {
 
         <section
           id="vision"
-          className="grid grid-cols-1 items-center justify-center bg-gradient-to-r from-sky-400 from-5% via-sky-300 via-50% to-sky-200 to-95% lg:grid-cols-2"
+          className="grid grid-cols-1 items-center justify-center bg-sky-300 lg:grid-cols-2"
         >
           <div className="w-full overflow-hidden bg-white md:w-auto">
             <img
@@ -203,7 +203,7 @@ function App() {
 
         <section
           id="contact"
-          className="relative flex flex-row items-center justify-center pb-48 pt-12"
+          className="relative flex flex-row items-center justify-center py-12"
         >
           <img
             className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
@@ -214,9 +214,12 @@ function App() {
             <h1 className="m-3 max-w-xl text-center font-alegreya text-3xl font-bold text-dark md:text-4xl">
               CONTACT
             </h1>
-            <p className="m-3 max-w-xl text-center text-dark">714 123 4566</p>
+            <p className="m-3 max-w-xl text-center text-dark">800 123 4567</p>
             <p className="m-3 max-w-xl text-center text-dark">
-              1600 Pennsylvania Avenue NW, Washington, DC 20500
+              1600 Pennsylvania Avenue NW
+            </p>
+            <p className="m-3 max-w-xl text-center text-dark">
+              Washington, DC 20500
             </p>
             <p className="m-3 max-w-xl text-center text-dark">
               not_a_real_email@gmial.com

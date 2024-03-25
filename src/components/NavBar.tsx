@@ -37,12 +37,12 @@ export default function NavBar() {
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon
-                      className="block h-6 w-6 stroke-2"
+                      className="block h-8 w-8 stroke-2"
                       aria-hidden="true"
                     />
                   ) : (
                     <Bars3Icon
-                      className="block h-6 w-6 stroke-2"
+                      className="block h-8 w-8 stroke-2"
                       aria-hidden="true"
                     />
                   )}
@@ -52,7 +52,7 @@ export default function NavBar() {
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="bg-gradient-to-r from-sky-400 from-5% via-sky-200 via-50% to-sky-400 to-95% bg-clip-text px-4 py-3 font-bodoni text-3xl font-medium text-transparent">
+                  <div className="bg-gradient-to-r from-sky-400 from-5% via-sky-200 via-50% to-sky-400 to-95% bg-clip-text px-4 py-3 font-bodoni text-2xl font-medium text-transparent lg:text-3xl">
                     Age Well Care Consultants
                   </div>
                 </div>
