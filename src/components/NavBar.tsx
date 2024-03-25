@@ -37,12 +37,12 @@ export default function NavBar() {
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon
-                      className="block h-6 w-6 stroke-2"
+                      className="block h-8 w-8 stroke-2"
                       aria-hidden="true"
                     />
                   ) : (
                     <Bars3Icon
-                      className="block h-6 w-6 stroke-2"
+                      className="block h-8 w-8 stroke-2"
                       aria-hidden="true"
                     />
                   )}
@@ -52,27 +52,27 @@ export default function NavBar() {
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="bg-gradient-to-r from-sky-400 from-5% via-sky-200 via-50% to-sky-400 to-95% bg-clip-text px-4 py-3 font-bodoni text-3xl font-medium text-transparent">
+                  <div className="font-merriweather bg-clip-text px-4 py-3 text-2xl font-medium text-transparent text-white lg:text-3xl">
                     Age Well Care Consultants
                   </div>
                 </div>
 
                 {/* Desktop Menu Items */}
-                <div className="hidden lg:ml-6 lg:block lg:py-4">
-                  <div className="flex space-x-4">
+                <div className="hidden lg:ml-10 lg:block lg:py-4">
+                  <ul className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <li
                         key={item.name}
                         className={classNames(
-                          "cursor-pointer whitespace-nowrap rounded-md px-2 py-3 font-bodoni text-xl font-medium text-light hover:bg-white/30 hover:text-white"
+                          "cursor-pointer whitespace-nowrap rounded-md px-2 py-3 font-alegreya text-xl font-medium text-light hover:bg-white/30 hover:text-white"
                         )}
                         aria-current={item.current ? "page" : undefined}
                         onClick={() => handleClick(item.scrollto)}
                       >
                         {item.name}
-                      </a>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -80,13 +80,13 @@ export default function NavBar() {
 
           {/* Mobile Menu Items */}
           <Disclosure.Panel className="lg:hidden">
-            <div className="space-y-1 bg-gradient-to-r from-gray-900/90 from-0% via-dark/90 via-50% to-gray-900/90 to-100% px-2 pb-3 pt-2">
+            <ul className="space-y-1 bg-gradient-to-r from-gray-900/90 from-0% via-dark/90 via-50% to-gray-900/90 to-100% px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
+                  as="li"
                   className={classNames(
-                    "block cursor-pointer rounded-md px-3 py-4 font-bodoni text-lg font-medium text-light hover:bg-white/30 hover:text-light"
+                    "block cursor-pointer rounded-md px-3 py-4 font-alegreya text-lg font-medium text-light hover:bg-white/30 hover:text-light"
                   )}
                   aria-current={item.current ? "page" : undefined}
                   onClick={() => handleClick(item.scrollto)}
@@ -94,7 +94,7 @@ export default function NavBar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-            </div>
+            </ul>
           </Disclosure.Panel>
         </>
       )}
