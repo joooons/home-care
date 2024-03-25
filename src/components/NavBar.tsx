@@ -59,9 +59,9 @@ export default function NavBar() {
 
                 {/* Desktop Menu Items */}
                 <div className="hidden lg:ml-6 lg:block lg:py-4">
-                  <div className="flex space-x-4">
+                  <ul className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <li
                         key={item.name}
                         className={classNames(
                           "cursor-pointer whitespace-nowrap rounded-md px-2 py-3 font-bodoni text-xl font-medium text-light hover:bg-white/30 hover:text-white"
@@ -70,9 +70,9 @@ export default function NavBar() {
                         onClick={() => handleClick(item.scrollto)}
                       >
                         {item.name}
-                      </a>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -80,11 +80,11 @@ export default function NavBar() {
 
           {/* Mobile Menu Items */}
           <Disclosure.Panel className="lg:hidden">
-            <div className="space-y-1 bg-gradient-to-r from-gray-900/90 from-0% via-dark/90 via-50% to-gray-900/90 to-100% px-2 pb-3 pt-2">
+            <ul className="space-y-1 bg-gradient-to-r from-gray-900/90 from-0% via-dark/90 via-50% to-gray-900/90 to-100% px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
+                  as="li"
                   className={classNames(
                     "block cursor-pointer rounded-md px-3 py-4 font-bodoni text-lg font-medium text-light hover:bg-white/30 hover:text-light"
                   )}
@@ -94,7 +94,7 @@ export default function NavBar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-            </div>
+            </ul>
           </Disclosure.Panel>
         </>
       )}
