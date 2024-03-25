@@ -7,7 +7,9 @@ import img_hug from "./assets/hug.jpg"
 import img_flower from "./assets/flower.jpg"
 import img_chile from "./assets/chile.jpg"
 import img_stare from "./assets/stare.jpg"
-import img_house from "./assets/house.jpg"
+// import img_house from "./assets/house.jpg"
+import img_porch from "./assets/porch.jpg"
+// import img_house_bw from "./assets/house-bw.jpg"
 import img_line_wave from "./assets/line-wave.jpg"
 // import img_line_minim from './assets/line-minim.jpg';
 // import img_line_couch from './assets/line-couch.jpg';
@@ -34,15 +36,15 @@ function App() {
 
         <section className="relative items-center justify-center">
           <img
-            className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
-            src={img_house}
+            className="absolute inset-0 -z-10 h-full w-full object-cover opacity-35"
+            src={img_porch}
             alt="image of a house"
           />
-          <div className="flex h-screen flex-col items-center justify-center px-16 pb-20 pt-24">
-            <h1 className="m-3 max-w-xl text-center font-alegreya text-2xl font-bold text-dark lg:text-4xl">
-              We'll take care of your loved ones
+          <div className="flex h-screen flex-col items-center justify-center px-16 pb-20 pt-24 lg:h-screen">
+            <h1 className="m-3 max-w-xl text-center font-alegreya text-3xl font-bold text-dark lg:text-6xl">
+              We are CARE experts
             </h1>
-            <p className="m-3 max-w-xl text-center text-dark">
+            <p className="m-3 max-w-xl text-center text-xl text-dark lg:text-2xl">
               As a compassionate home care concierge service, we offer
               personalized care in the comfort of our clients' homes, focusing
               on daily activities, medication management, and companionship to
@@ -70,7 +72,7 @@ function App() {
 
         <section
           id="vision"
-          className="grid grid-cols-1 items-center justify-center bg-sky-300 lg:grid-cols-2"
+          className="grid grid-cols-1 items-center justify-center bg-sky-200 lg:grid-cols-2"
         >
           <div className="w-full overflow-hidden bg-white md:w-auto">
             <img
@@ -144,14 +146,14 @@ function App() {
 
         <section
           id="testimony"
-          className="flex flex-col justify-center bg-sky-300 p-12"
+          className="flex flex-col justify-center bg-sky-200 p-12 lg:bg-sky-300"
         >
           <h1 className="mb-12 text-center font-alegreya text-3xl font-bold text-dark md:text-4xl">
             TESTIMONIALS
           </h1>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
             <div className="pb-12">
-              <div className="w-full overflow-hidden rounded-3xl bg-white md:w-auto">
+              <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
                 <img
                   className="aspect-video h-full w-full object-cover"
                   src={img_hug}
@@ -164,7 +166,7 @@ function App() {
               <div className="text-xl">Albert</div>
             </div>
             <div className="pb-12">
-              <div className="w-full overflow-hidden rounded-3xl bg-white md:w-auto">
+              <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
                 <img
                   className="aspect-video h-full w-full object-cover"
                   src={img_flower}
@@ -178,7 +180,7 @@ function App() {
               <div className="text-xl">Barbara</div>
             </div>
             <div className="pb-12">
-              <div className="w-full overflow-hidden rounded-3xl bg-white md:w-auto">
+              <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
                 <img
                   className="aspect-video h-full w-full object-cover"
                   src={img_chile}
