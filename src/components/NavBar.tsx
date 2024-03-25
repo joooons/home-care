@@ -52,19 +52,19 @@ export default function NavBar() {
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="bg-gradient-to-r from-sky-400 from-5% via-sky-200 via-50% to-sky-400 to-95% bg-clip-text px-4 py-3 font-bodoni text-2xl font-medium text-transparent lg:text-3xl">
+                  <div className="font-merriweather bg-clip-text px-4 py-3 text-2xl font-medium text-transparent text-white lg:text-3xl">
                     Age Well Care Consultants
                   </div>
                 </div>
 
                 {/* Desktop Menu Items */}
-                <div className="hidden lg:ml-6 lg:block lg:py-4">
+                <div className="hidden lg:ml-10 lg:block lg:py-4">
                   <ul className="flex space-x-4">
                     {navigation.map((item) => (
                       <li
                         key={item.name}
                         className={classNames(
-                          "cursor-pointer whitespace-nowrap rounded-md px-2 py-3 font-bodoni text-xl font-medium text-light hover:bg-white/30 hover:text-white"
+                          "cursor-pointer whitespace-nowrap rounded-md px-2 py-3 font-alegreya text-xl font-medium text-light hover:bg-white/30 hover:text-white"
                         )}
                         aria-current={item.current ? "page" : undefined}
                         onClick={() => handleClick(item.scrollto)}
@@ -86,7 +86,7 @@ export default function NavBar() {
                   key={item.name}
                   as="li"
                   className={classNames(
-                    "block cursor-pointer rounded-md px-3 py-4 font-bodoni text-lg font-medium text-light hover:bg-white/30 hover:text-light"
+                    "block cursor-pointer rounded-md px-3 py-4 font-alegreya text-lg font-medium text-light hover:bg-white/30 hover:text-light"
                   )}
                   aria-current={item.current ? "page" : undefined}
                   onClick={() => handleClick(item.scrollto)}
