@@ -12,6 +12,7 @@ import img_line_wave from "./assets/line-wave.jpg"
 // import img_line_minim from './assets/line-minim.jpg';
 // import img_line_couch from './assets/line-couch.jpg';
 import img_abstract from "./assets/abstract.jpg"
+import Footer from "./components/Footer"
 
 function App() {
   const handleClick = (section: string) => {
@@ -223,7 +224,8 @@ function App() {
           </div>
         </section>
       </main>
-      <footer></footer>
+
+      <Footer></Footer>
     </>
   )
 }
