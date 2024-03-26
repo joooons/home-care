@@ -7,7 +7,7 @@ import img_hug from "./assets/hug.jpg"
 import img_flower from "./assets/flower.jpg"
 import img_chile from "./assets/chile.jpg"
 import img_stare from "./assets/stare.jpg"
-// import img_house from "./assets/house.jpg"
+import img_house from "./assets/house.jpg"
 // import img_porch from "./assets/porch.jpg"
 // import img_house_bw from "./assets/house-bw.jpg"
 import img_line_wave from "./assets/line-wave.jpg"
@@ -57,26 +57,29 @@ function App() {
               ></path>
             </svg>
           </div>
-          <div className="relative flex h-1/2 flex-col items-start justify-end gap-6 px-16 lg:h-screen">
-            <h1 className="text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
-              We are <span className="text-purple-600">CARE</span> experts
-            </h1>
-            <p className="max-w-xl text-left text-xl text-dark lg:text-2xl">
-              We provide personalized home care services, focusing on daily
-              activities and companionship to support the independence and
-              well-being of our clients in their homes.
-            </p>
-            <div className="flex justify-center">
-              <button
-                className="bg-wave text-light hover:bg-sky-600"
-                onClick={() => handleClick("vision")}
-              >
-                LEARN MORE
-              </button>
+          <div className="h-1/5"></div>
+          <div className="grid h-3/4 grid-rows-2 md:grid-cols-2">
+            <div className="relative flex flex-col items-start justify-start gap-6 px-16 xl:px-32">
+              <h1 className="text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
+                We are <span className="text-purple-600">CARE</span> experts
+              </h1>
+              <p className="max-w-xl text-left text-xl font-medium text-dark/80 ">
+                We provide personalized home care services, focusing on daily
+                activities and companionship to support the independence and
+                well-being of our clients in their homes.
+              </p>
+              <div className="flex justify-center">
+                <button
+                  className="bg-wave text-light hover:bg-sky-600"
+                  onClick={() => handleClick("vision")}
+                >
+                  LEARN MORE
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="-z-10 flex h-1/2 flex-col justify-center align-top">
-            <SvgGardener></SvgGardener>
+            <div className="-z-10 flex flex-col justify-center">
+              <SvgGardener></SvgGardener>
+            </div>
           </div>
         </section>
       </header>
@@ -122,7 +125,7 @@ function App() {
 
         <section
           id="what"
-          className="relative h-screen items-center justify-center"
+          className="relative h-screen items-center justify-center "
         >
           <img
             className="absolute inset-0 -z-20 h-full w-full object-cover opacity-20"
@@ -145,9 +148,9 @@ function App() {
             </svg>
           </div>
 
-          <div className="relative grid grid-rows-2 items-center justify-center p-16 lg:grid-cols-2">
-            <div className="w-full md:w-auto md:p-0 ">
-              <div className="aspect-square overflow-hidden rounded-full bg-blue-500 shadow-lg lg:m-24">
+          <div className="relative grid grid-rows-2 items-center justify-center gap-16 p-16 lg:grid-rows-1 lg:flex-row lg:gap-0">
+            <div className="w-full px-0 sm:px-16 md:px-32">
+              <div className="aspect-square overflow-hidden rounded-full bg-blue-500 shadow-lg ">
                 <img
                   className="h-full w-full object-cover"
                   src={img_stare}
@@ -155,17 +158,14 @@ function App() {
                 />
               </div>
             </div>
-            <div className="flex w-full flex-col gap-6 md:w-auto lg:order-first lg:pb-0 ">
-              <h1 className="max-w-xl text-left text-3xl font-bold text-dark md:text-4xl">
+            <div className="flex w-full flex-col gap-6 md:w-auto lg:order-first">
+              <h1 className="max-w-xl text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
                 WHAT WE DO
               </h1>
-              <p className="max-w-xl text-left text-dark">
-                At HOME CARE, we believe that home care is everything. We will
-                treat you like family, because at Home Care, you are family.
-              </p>
-              <p className="max-w-xl text-left text-dark">
-                We serve homes in Whittier, La Mirada, and Fullerton.
-              </p>
+              <div className="text-purp flex flex-col gap-4 text-left text-xl font-bold lg:text-xl">
+                <p>We will treat you like family, because you are family.</p>
+                <p>We serve homes in Whittier, La Mirada, and Fullerton.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -179,12 +179,12 @@ function App() {
 
         <section
           id="testimony"
-          className="bg-purp flex flex-col justify-center gap-8 py-12 lg:bg-sky-300"
+          className="bg-purp flex flex-col justify-center gap-12 py-12 "
         >
-          <h1 className="px-16 text-center text-3xl font-bold text-light md:text-4xl">
+          <h1 className="text-center text-3xl font-bold text-light [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:text-4xl lg:text-6xl">
             TESTIMONIALS
           </h1>
-          <div className="flex flex-col gap-8 px-16 lg:grid-cols-3 ">
+          <div className="grid grid-cols-1 gap-8 px-16 md:grid-cols-2 xl:grid-cols-4">
             <div className="flex flex-col gap-2">
               <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
                 <img
@@ -228,6 +228,21 @@ function App() {
               </h3>
               <div className="text-xl text-light/50">Charlie Chapstick</div>
             </div>
+
+            <div className="flex flex-col gap-2">
+              <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
+                <img
+                  className="aspect-video h-full w-full object-cover"
+                  src={img_house}
+                  alt="image of a house"
+                />
+              </div>
+              <h3 className="text-2xl text-light">
+                "It meant so much to me that I could visit my grandma at her
+                house, where I used to play, instead of at a hospital!"
+              </h3>
+              <div className="text-xl text-light/50">Debbie Downer</div>
+            </div>
           </div>
         </section>
 
@@ -248,7 +263,7 @@ function App() {
             alt="image of abstract paper texture"
           />
           <div className="flex flex-col gap-4 p-16">
-            <h1 className="text-purp max-w-xl text-center text-3xl font-bold md:text-4xl">
+            <h1 className="text-purp max-w-xl text-center text-3xl font-bold [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:text-4xl lg:text-6xl">
               CONTACT
             </h1>
             <p className="text-center text-xl text-dark">800 123 4567</p>
