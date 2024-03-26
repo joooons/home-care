@@ -18,7 +18,6 @@ import Footer from "./components/Footer"
 
 function App() {
   const handleClick = (section: string) => {
-    console.log("sup")
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
   }
 

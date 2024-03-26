@@ -30,29 +30,11 @@ export default function NavBar() {
           <div className="absolute h-24 w-full bg-gradient-to-r from-gray-900 from-0% via-dark via-50% to-gray-900 to-100% "></div>
           <div className="mx-auto max-w-7xl px-2 lg:px-6">
             <div className="relative z-10 flex h-24 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-light hover:bg-white/50 focus:outline-none focus-visible:ring focus-visible:ring-purple-50/0">
-                  <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon
-                      className="block h-8 w-8 stroke-2"
-                      aria-hidden="true"
-                    />
-                  ) : (
-                    <Bars3Icon
-                      className="block h-8 w-8 stroke-2"
-                      aria-hidden="true"
-                    />
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start">
+              <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-start">
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="font-merriweather bg-clip-text px-4 py-3 text-2xl font-medium text-transparent text-white lg:text-3xl">
+                  <div className="bg-clip-text px-4 py-3 font-merriweather text-2xl font-medium text-transparent text-white lg:text-3xl">
                     Age Well Care Consultants
                   </div>
                 </div>
@@ -74,6 +56,24 @@ export default function NavBar() {
                     ))}
                   </ul>
                 </div>
+              </div>
+              <div className="inset-y-0 left-0 flex items-center lg:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-light hover:bg-white/50 focus:outline-none focus-visible:ring focus-visible:ring-purple-50/0">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon
+                      className="block h-8 w-8 stroke-2"
+                      aria-hidden="true"
+                    />
+                  ) : (
+                    <Bars3Icon
+                      className="block h-8 w-8 stroke-2"
+                      aria-hidden="true"
+                    />
+                  )}
+                </Disclosure.Button>
               </div>
             </div>
           </div>
