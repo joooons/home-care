@@ -56,6 +56,11 @@ export default function Footer() {
                 <p className="text-gray-600 transition-colors duration-300 hover:cursor-pointer hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
                   Terms & Conditions
                 </p>
+                <p className="text-gray-600 transition-colors duration-300 hover:cursor-pointer hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
+                  <a href="https://storyset.com/people" className="font-normal">
+                    People illustrations by Storyset
+                  </a>
+                </p>
               </div>
             </div>
           </div>
