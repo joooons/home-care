@@ -80,13 +80,13 @@ export default function NavBar() {
 
           {/* Mobile Menu Items */}
           <Disclosure.Panel className="lg:hidden">
-            <ul className="space-y-1 bg-gradient-to-r from-gray-900/90 from-0% via-dark/90 via-50% to-gray-900/90 to-100% px-2 pb-3 pt-2">
+            <ul className="flex flex-col justify-between gap-2 space-y-1 bg-black/90 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="li"
                   className={classNames(
-                    "block cursor-pointer rounded-md px-3 py-4 font-alegreya text-lg font-medium text-light hover:bg-white/30 hover:text-light"
+                    "block cursor-pointer rounded-md px-3 py-4 text-2xl text-light hover:bg-white/30 hover:text-light"
                   )}
                   aria-current={item.current ? "page" : undefined}
                   onClick={() => handleClick(item.scrollto)}

@@ -4,7 +4,7 @@ export default function Footer() {
       <footer className="font-sans bg-blue-100/80 dark:bg-gray-900">
         <div className="container mx-auto px-6 py-12">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            <div className="sm:col-span-2">
+            {/* <div className="sm:col-span-2">
               <h1 className="max-w-lg text-center text-xl font-semibold  tracking-tight text-gray-800 md:text-left xl:text-2xl dark:text-white">
                 Subscribe
               </h1>
@@ -21,11 +21,11 @@ export default function Footer() {
                   Send
                 </button>
               </div>
-            </div>
+            </div> */}
 
             <div>
               <p className="text-left font-semibold text-gray-800 dark:text-white">
-                Quick Link
+                About Us
               </p>
 
               <div className="mt-5 flex flex-col items-start space-y-2">
@@ -60,39 +60,41 @@ export default function Footer() {
             </div>
           </div>
 
-          <hr className="my-6 h-2 border-gray-200 md:my-8 dark:border-gray-700" />
+          <hr className="my-6 h-2 border-gray-400 md:my-8 dark:border-gray-700" />
 
-          <div className="sm:flex sm:items-center sm:justify-center">
-            <div className="flex gap-4 hover:cursor-pointer">
-              <img
-                src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg"
-                width="30"
-                height="30"
-                alt="fb"
-              />
-              <img
-                src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg"
-                width="30"
-                height="30"
-                alt="inst"
-              />
-              <img
-                src="https://www.svgrepo.com/show/22037/path.svg"
-                width="30"
-                height="30"
-                alt="pn"
-              />
-              <img
-                src="https://www.svgrepo.com/show/28145/linkedin.svg"
-                width="30"
-                height="30"
-                alt="in"
-              />
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+            <div className="sm:flex sm:items-center sm:justify-center">
+              <div className="flex gap-4 hover:cursor-pointer">
+                <img
+                  src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg"
+                  width="30"
+                  height="30"
+                  alt="fb"
+                />
+                <img
+                  src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg"
+                  width="30"
+                  height="30"
+                  alt="inst"
+                />
+                <img
+                  src="https://www.svgrepo.com/show/22037/path.svg"
+                  width="30"
+                  height="30"
+                  alt="pn"
+                />
+                <img
+                  src="https://www.svgrepo.com/show/28145/linkedin.svg"
+                  width="30"
+                  height="30"
+                  alt="in"
+                />
+              </div>
             </div>
+            <p className="font-sans text-start md:p-4 md:text-center md:text-lg">
+              © 2024 AWCC Inc. All rights reserved.
+            </p>
           </div>
-          <p className="font-sans p-8 text-start md:p-4 md:text-center md:text-lg">
-            © 2024 AWCC Inc. All rights reserved.
-          </p>
         </div>
       </footer>
     </>
