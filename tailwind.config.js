@@ -18,6 +18,7 @@ export default {
         'soot': '#2A1B1B',
         'dark': "#000",
         'light': "#FFF",
+        'wave': "#4992FF"
       },
     },
   },

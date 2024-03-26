@@ -27,7 +27,7 @@ export default function NavBar() {
       {({ open }) => (
         <>
           {/* NavBar  */}
-          <div className="absolute h-24 w-full bg-gradient-to-r from-gray-900 from-0% via-dark via-50% to-gray-900 to-100% "></div>
+          <div className="absolute h-24 w-full bg-purple-500"></div>
           <div className="mx-auto max-w-7xl px-2 lg:px-6">
             <div className="relative z-10 flex h-24 items-center justify-between">
               <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-start">
