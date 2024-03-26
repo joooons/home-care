@@ -28,9 +28,9 @@ export default function NavBar() {
         <>
           {/* NavBar  */}
           <div className="absolute h-24 w-full bg-purple-500"></div>
-          <div className="mx-auto max-w-7xl px-2 lg:px-6">
+          <div className="mx-auto  px-2 lg:px-6">
             <div className="relative z-10 flex h-24 items-center justify-between">
-              <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-start">
+              <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-between">
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
