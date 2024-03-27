@@ -11,7 +11,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative h-svh w-full items-center justify-center ">
+      <section className="relative w-full items-center justify-center ">
         {/* <img
           className="absolute inset-0 -z-10 h-5/6 w-full object-cover opacity-35 lg:h-full"
           src={img_porch}
@@ -20,9 +20,8 @@ export default function Hero() {
 
         <WaveDivider1></WaveDivider1>
 
-        <div className="h-1/5"></div>
-        <div className="grid h-3/4 grid-rows-2 md:grid-cols-2">
-          <div className="relative flex flex-col items-start justify-start gap-6 px-16 xl:px-32">
+        <div className="container mx-auto flex flex-col px-6 py-32 md:flex-row xl:pb-56">
+          <div className="flex flex-col items-start justify-center space-y-6 md:w-1/2 xl:mx-10">
             <h1 className="text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
               We are <span className="text-second">CARE</span> experts
             </h1>
@@ -40,7 +39,7 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <div className="-z-10 flex flex-col justify-center">
+          <div className="-z-10 sm:mx-12 md:mx-0 md:w-1/2 xl:mx-10">
             <SvgGardener></SvgGardener>
           </div>
         </div>
