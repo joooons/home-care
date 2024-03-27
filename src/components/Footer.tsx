@@ -4,25 +4,6 @@ export default function Footer() {
       <footer className="font-sans bg-blue-100/80 dark:bg-gray-900">
         <div className="container mx-auto px-6 py-12">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            {/* <div className="sm:col-span-2">
-              <h1 className="max-w-lg text-center text-xl font-semibold  tracking-tight text-gray-800 md:text-left xl:text-2xl dark:text-white">
-                Subscribe
-              </h1>
-
-              <div className="mx-auto mt-6 flex flex-col space-y-3 md:flex-row md:space-y-0">
-                <input
-                  id="email"
-                  type="text"
-                  className="rounded-md border bg-white px-4 py-2 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
-                  placeholder="Email Address"
-                />
-
-                <button className="w-full transform rounded-lg bg-gray-800 px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-80 md:mx-4 md:w-auto">
-                  Send
-                </button>
-              </div>
-            </div> */}
-
             <div>
               <p className="text-left font-semibold text-gray-800 dark:text-white">
                 About Us
