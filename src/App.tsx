@@ -4,7 +4,7 @@ import Footer from "./components/Footer"
 
 import "./App.css"
 
-import img_convo from "./assets/convo.jpg"
+// import img_convo from "./assets/convo.jpg"
 import img_hug from "./assets/hug.jpg"
 import img_flower from "./assets/flower.jpg"
 import img_chile from "./assets/chile.jpg"
@@ -14,6 +14,7 @@ import img_house from "./assets/house.jpg"
 // import img_house_bw from "./assets/house-bw.jpg"
 import img_line_wave from "./assets/line-wave.jpg"
 import Hero from "./components/Hero"
+import Vision from "./components/Vision"
 // import img_line_minim from './assets/line-minim.jpg';
 // import img_line_couch from './assets/line-couch.jpg';
 // import img_abstract from "./assets/abstract.jpg"
@@ -29,36 +30,8 @@ function App() {
 
       <main>
         <Hero></Hero>
-        {/* //  MM      MM  MMMMMM    MMMM    MMMMMM    MMMM    MM    MM  
-            //  MM      MM    MM    MM    MM    MM    MM    MM  MMMM  MM  
-            //  MM      MM    MM      MM        MM    MM    MM  MM  MMMM  
-            //  MM      MM    MM        MM      MM    MM    MM  MM    MM  
-            //    MM  MM      MM    MM    MM    MM    MM    MM  MM    MM  
-            //      MM      MMMMMM    MMMM    MMMMMM    MMMM    MM    MM   */}
 
-        <section
-          id="vision"
-          className="lg: grid grid-cols-2 grid-rows-2 items-center justify-center bg-prime lg:grid-rows-1"
-        >
-          <div className="w-full overflow-hidden p-4 md:w-auto">
-            <img
-              className="h-full w-full rounded-2xl object-cover shadow-lg"
-              src={img_convo}
-              alt="image of a conversation"
-            />
-          </div>
-
-          <div className="flex w-full flex-col justify-center gap-6 px-16 md:w-auto">
-            <h1 className="max-w-xl text-center text-3xl font-bold text-light [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:text-4xl lg:text-left lg:text-6xl">
-              VISION
-            </h1>
-            <div className="text-left text-xl font-medium text-white/70 ">
-              <p className="max-w-xl">We believe...</p>
-              <p className="max-w-xl">We promise...</p>
-              <p className="max-w-xl ">We provide...</p>
-            </div>
-          </div>
-        </section>
+        <Vision></Vision>
 
         {/* //  MM      MM  MM    MM    MMMM    MMMMMM  
             //  MM      MM  MM    MM  MM    MM    MM    
