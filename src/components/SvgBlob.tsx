@@ -15,90 +15,90 @@ export default function SvgBlob() {
           width="900"
           height="300"
           fill="#FFFFFF"
-          fill-opacity="0"
+          fillOpacity="0"
         ></rect>
         <defs>
           <linearGradient id="grad1_0" x1="66.7%" y1="100%" x2="100%" y2="0%">
-            <stop offset="-10%" stop-color="#4992ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#4992ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#4992ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#4992ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_1" x1="66.7%" y1="100%" x2="100%" y2="0%">
-            <stop offset="-10%" stop-color="#4992ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#75a3ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#4992ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#75a3ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_2" x1="66.7%" y1="100%" x2="100%" y2="0%">
-            <stop offset="-10%" stop-color="#97b4ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#75a3ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#97b4ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#75a3ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_3" x1="66.7%" y1="100%" x2="100%" y2="0%">
-            <stop offset="-10%" stop-color="#97b4ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#b3c6ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#97b4ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#b3c6ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_4" x1="66.7%" y1="100%" x2="100%" y2="0%">
-            <stop offset="-10%" stop-color="#ced9ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#b3c6ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#ced9ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#b3c6ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_5" x1="66.7%" y1="100%" x2="100%" y2="0%">
-            <stop offset="-10%" stop-color="#ced9ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#e7ecff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#ced9ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#e7ecff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_6" x1="66.7%" y1="100%" x2="100%" y2="0%">
-            <stop offset="-10%" stop-color="#ffffff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#e7ecff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#ffffff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#e7ecff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_0" x1="0%" y1="100%" x2="33.3%" y2="0%">
-            <stop offset="-10%" stop-color="#4992ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#4992ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#4992ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#4992ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_1" x1="0%" y1="100%" x2="33.3%" y2="0%">
-            <stop offset="-10%" stop-color="#75a3ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#4992ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#75a3ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#4992ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_2" x1="0%" y1="100%" x2="33.3%" y2="0%">
-            <stop offset="-10%" stop-color="#75a3ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#97b4ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#75a3ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#97b4ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_3" x1="0%" y1="100%" x2="33.3%" y2="0%">
-            <stop offset="-10%" stop-color="#b3c6ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#97b4ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#b3c6ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#97b4ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_4" x1="0%" y1="100%" x2="33.3%" y2="0%">
-            <stop offset="-10%" stop-color="#b3c6ff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#ced9ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#b3c6ff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#ced9ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_5" x1="0%" y1="100%" x2="33.3%" y2="0%">
-            <stop offset="-10%" stop-color="#e7ecff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#ced9ff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#e7ecff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#ced9ff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_6" x1="0%" y1="100%" x2="33.3%" y2="0%">
-            <stop offset="-10%" stop-color="#e7ecff" stop-opacity="1"></stop>
-            <stop offset="110%" stop-color="#ffffff" stop-opacity="1"></stop>
+            <stop offset="-10%" stopColor="#e7ecff" stopOpacity="1"></stop>
+            <stop offset="110%" stopColor="#ffffff" stopOpacity="1"></stop>
           </linearGradient>
         </defs>
         <g transform="translate(900, 300)" className="fill-prime">
