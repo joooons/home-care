@@ -97,7 +97,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="font-sans text-start md:p-4 md:text-center md:text-lg">
-              © 2024 AWCC Inc. All rights reserved.
+              © 2024 The Home Care Company. All rights reserved.
             </p>
           </div>
         </div>

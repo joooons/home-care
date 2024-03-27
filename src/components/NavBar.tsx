@@ -35,7 +35,7 @@ export default function NavBar() {
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
                   <div className="bg-clip-text px-4 py-3 font-merriweather text-2xl font-medium text-transparent text-white lg:text-3xl">
-                    Age Well Care Consultants
+                    The Home Care Consultants
                   </div>
                 </div>
 
