@@ -7,7 +7,7 @@ const navigation = [
   { name: "Vision", current: false, scrollto: "vision" },
   { name: "What We Do", current: false, scrollto: "what" },
   { name: "Testimonials", current: false, scrollto: "testimony" },
-  { name: "Contact", current: false, scrollto: "contact" },
+  { name: "Contact Us", current: false, scrollto: "contact" },
 ]
 
 function classNames<T extends string | { [key: string]: boolean }>(
@@ -46,7 +46,7 @@ export default function NavBar() {
                       <li
                         key={item.name}
                         className={classNames(
-                          "cursor-pointer whitespace-nowrap rounded-md px-2 py-3 font-alegreya text-xl font-medium text-light hover:bg-white/30 hover:text-white"
+                          "cursor-pointer whitespace-nowrap rounded-md px-2 py-3  text-xl font-medium text-light hover:bg-white/30 hover:text-white"
                         )}
                         aria-current={item.current ? "page" : undefined}
                         onClick={() => handleClick(item.scrollto)}

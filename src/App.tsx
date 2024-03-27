@@ -1,4 +1,6 @@
 import NavBar from "./components/NavBar"
+import ContactUs from "./components/ContactUs"
+import Footer from "./components/Footer"
 
 import "./App.css"
 
@@ -13,11 +15,9 @@ import img_house from "./assets/house.jpg"
 import img_line_wave from "./assets/line-wave.jpg"
 // import img_line_minim from './assets/line-minim.jpg';
 // import img_line_couch from './assets/line-couch.jpg';
-import img_abstract from "./assets/abstract.jpg"
-import Footer from "./components/Footer"
-import SvgGardener from "./components/SvgGardener"
+// import img_abstract from "./assets/abstract.jpg"
 
-// import { SvgGarden } from "./svg/Gardening-cuate.svg"
+import SvgGardener from "./components/SvgGardener"
 
 function App() {
   const handleClick = (section: string) => {
@@ -94,7 +94,7 @@ function App() {
 
         <section
           id="vision"
-          className="bg-wave lg: grid grid-cols-2 grid-rows-2 items-center justify-center lg:grid-rows-1"
+          className="lg: grid grid-cols-2 grid-rows-2 items-center justify-center bg-wave lg:grid-rows-1"
         >
           <div className="w-full overflow-hidden p-4 md:w-auto">
             <img
@@ -162,7 +162,7 @@ function App() {
               <h1 className="max-w-xl text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
                 WHAT WE DO
               </h1>
-              <div className="text-purp flex flex-col gap-4 text-left text-xl font-bold lg:text-xl">
+              <div className="flex flex-col gap-4 text-left text-xl font-bold text-purp lg:text-xl">
                 <p>We will treat you like family, because you are family.</p>
                 <p>We serve homes in Whittier, La Mirada, and Fullerton.</p>
               </div>
@@ -179,7 +179,7 @@ function App() {
 
         <section
           id="testimony"
-          className="bg-purp flex flex-col justify-center gap-12 py-12 "
+          className="flex flex-col justify-center gap-12 bg-purp py-12 "
         >
           <h1 className="text-center text-3xl font-bold text-light [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:text-4xl lg:text-6xl">
             TESTIMONIALS
@@ -246,35 +246,7 @@ function App() {
           </div>
         </section>
 
-        {/* //    MMMM      MMMM    MM    MM  MMMMMM    MMMM      MMMM    MMMMMM  
-            //  MM    MM  MM    MM  MMMM  MM    MM    MM    MM  MM    MM    MM    
-            //  MM        MM    MM  MM  MMMM    MM    MMMMMMMM  MM          MM    
-            //  MM        MM    MM  MM    MM    MM    MM    MM  MM          MM    
-            //  MM    MM  MM    MM  MM    MM    MM    MM    MM  MM    MM    MM    
-            //    MMMM      MMMM    MM    MM    MM    MM    MM    MMMM      MM     */}
-
-        <section
-          id="contact"
-          className="relative flex flex-row items-center justify-center py-12"
-        >
-          <img
-            className="absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
-            src={img_abstract}
-            alt="image of abstract paper texture"
-          />
-          <div className="flex flex-col gap-4 p-16">
-            <h1 className="text-purp max-w-xl text-center text-3xl font-bold [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:text-4xl lg:text-6xl">
-              CONTACT
-            </h1>
-            <p className="text-center text-xl text-dark">800 123 4567</p>
-            <p className="text-center text-xl text-dark">
-              1600 Pennsylvania Avenue NW <br></br>Washington, DC 20500
-            </p>
-            <p className="text-center text-xl text-dark">
-              not_a_real_email@gmial.com
-            </p>
-          </div>
-        </section>
+        <ContactUs></ContactUs>
       </main>
 
       <Footer></Footer>
