@@ -20,7 +20,7 @@ export default {
         'light': "#FFF",
         'prime': "#4992FF",
         // 'prime': "#5C4600",
-        'second': "#FCBA03"
+        'second': "#4E31A3"
       },
     },
   },
