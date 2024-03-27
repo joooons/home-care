@@ -6,10 +6,7 @@ import img_line_wave from "../assets/line-wave.jpg"
 export default function WhatWeDo() {
   return (
     <>
-      <section
-        id="what"
-        className="relative h-screen items-center justify-center "
-      >
+      <section id="what" className="relative items-center justify-center ">
         <img
           className="absolute inset-0 -z-20 h-full w-full object-cover opacity-20"
           src={img_line_wave}
@@ -18,8 +15,8 @@ export default function WhatWeDo() {
 
         <WaveDivider2></WaveDivider2>
 
-        <div className="relative grid grid-rows-2 items-center justify-center gap-16 p-16 lg:grid-cols-2 lg:grid-rows-1 lg:gap-0">
-          <div className="w-full px-0 sm:px-16 md:px-32">
+        <div className="container relative mx-auto flex flex-col items-center justify-center gap-8 p-16 px-6 pb-40 md:flex-row lg:gap-0">
+          <div className="w-full sm:px-16 xl:mx-10">
             <div className="aspect-square overflow-hidden rounded-full bg-blue-500 shadow-lg ">
               <img
                 className="h-full w-full object-cover"
@@ -28,7 +25,7 @@ export default function WhatWeDo() {
               />
             </div>
           </div>
-          <div className="flex w-full flex-col gap-6 md:w-auto lg:order-first">
+          <div className="flex w-full flex-col gap-6 md:order-first xl:mx-10">
             <h1 className="max-w-xl text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
               WHAT WE DO
             </h1>
