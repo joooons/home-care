@@ -18,8 +18,9 @@ export default {
         'soot': '#2A1B1B',
         'dark': "#000",
         'light': "#FFF",
-        'wave': "#4992FF",
-        'purp': "#9333EA"
+        'prime': "#4992FF",
+        // 'prime': "#5C4600",
+        'second': "#FCBA03"
       },
     },
   },

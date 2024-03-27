@@ -1,8 +1,6 @@
 import { Disclosure } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
-// import icon from '../assets/home-alt-svgrepo-com.svg';
-
 const navigation = [
   { name: "Vision", current: false, scrollto: "vision" },
   { name: "What We Do", current: false, scrollto: "what" },
@@ -27,7 +25,7 @@ export default function NavBar() {
       {({ open }) => (
         <>
           {/* NavBar  */}
-          <div className="absolute h-24 w-full bg-purple-500"></div>
+          <div className="bg-second absolute h-24 w-full"></div>
           <div className="mx-auto  px-2 lg:px-6">
             <div className="relative z-10 flex h-24 items-center justify-between">
               <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-between">
@@ -59,7 +57,7 @@ export default function NavBar() {
               </div>
               <div className="inset-y-0 left-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-light hover:bg-white/50 focus:outline-none focus-visible:ring focus-visible:ring-purple-50/0">
+                <Disclosure.Button className="focus-visible:ring-purp-50/0 relative inline-flex items-center justify-center rounded-md p-2 text-light hover:bg-white/50 focus:outline-none focus-visible:ring">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
