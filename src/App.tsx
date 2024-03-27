@@ -64,14 +64,14 @@ function App() {
               <h1 className="text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
                 We are <span className="text-second">CARE</span> experts
               </h1>
-              <p className="max-w-xl text-left text-xl font-medium text-dark/80 ">
+              <p className="max-w-xl text-left text-xl font-medium text-dark/60 ">
                 We provide personalized home care services, focusing on daily
                 activities and companionship to support the independence and
                 well-being of our clients in their homes.
               </p>
               <div className="flex justify-center">
                 <button
-                  className="bg-prime hover:bg-prime text-light"
+                  className="focus-visible cursor-pointer rounded-full bg-prime px-6 py-3 font-medium text-light transition hover:bg-second"
                   onClick={() => handleClick("vision")}
                 >
                   LEARN MORE
@@ -95,7 +95,7 @@ function App() {
 
         <section
           id="vision"
-          className="lg: bg-prime grid grid-cols-2 grid-rows-2 items-center justify-center lg:grid-rows-1"
+          className="lg: grid grid-cols-2 grid-rows-2 items-center justify-center bg-prime lg:grid-rows-1"
         >
           <div className="w-full overflow-hidden p-4 md:w-auto">
             <img
@@ -163,7 +163,7 @@ function App() {
               <h1 className="max-w-xl text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
                 WHAT WE DO
               </h1>
-              <div className="text-second flex flex-col gap-4 text-left text-xl font-bold lg:text-xl">
+              <div className="flex flex-col gap-4 text-left text-xl font-medium text-dark/60 lg:text-xl">
                 <p>We will treat you like family, because you are family.</p>
                 <p>We serve homes in Whittier, La Mirada, and Fullerton.</p>
               </div>
@@ -180,7 +180,7 @@ function App() {
 
         <section
           id="testimony"
-          className="bg-second flex flex-col justify-center gap-12 py-12 "
+          className="flex flex-col justify-center gap-12 bg-second py-12 "
         >
           <h1 className="text-center text-3xl font-bold text-light [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:text-4xl lg:text-6xl">
             TESTIMONIALS
