@@ -26,10 +26,10 @@ export default function WhatWeDo() {
             </div>
           </div>
           <div className="flex w-full flex-col gap-6 md:order-first xl:mx-10">
-            <h1 className="max-w-xl text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
+            <h1 className="max-w-xl text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl dark:text-light">
               WHAT WE DO
             </h1>
-            <div className="flex flex-col gap-4 text-left text-xl font-medium text-dark/60 lg:text-xl">
+            <div className="flex flex-col gap-4 text-left text-xl font-medium text-dark/60 lg:text-xl dark:text-light/60">
               <p>We will treat you like family, because you are family.</p>
               <p>We serve homes in Whittier, La Mirada, and Fullerton.</p>
             </div>
