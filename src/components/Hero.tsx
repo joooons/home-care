@@ -21,7 +21,7 @@ export default function Hero() {
         <WaveDivider1></WaveDivider1>
 
         <div className="container mx-auto flex flex-col px-6 py-32 md:flex-row xl:pb-56">
-          <div className="flex flex-col items-start justify-center space-y-6 md:w-1/2 xl:mx-10">
+          <div className="flex flex-col items-start justify-center space-y-6 md:w-1/2 xl:mr-10">
             <h1 className="text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl">
               We are <span className="text-second">CARE</span> experts
             </h1>

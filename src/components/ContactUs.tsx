@@ -12,9 +12,9 @@ export default function ContactUs() {
             CONTACT US
           </h1>
           <div className="font-base flex flex-col space-y-3 text-left text-xl font-medium text-dark/60 md:text-2xl lg:space-y-6 lg:text-3xl">
-            <p>(800) 123-4567</p>
+            <p>(xxx) xxx-xxxx</p>
             <p>
-              1600 Pennsylvania Avenue NW <br></br>Washington, DC 20500
+              1234 Fictional Avenue<br></br>Springfield, NA 12345
             </p>
             <p>notarealemail@gmail.com</p>
           </div>
