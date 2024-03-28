@@ -3,7 +3,7 @@ import img_convo from "../assets/convo.jpg"
 export default function Vision() {
   return (
     <>
-      <section id="vision" className="bg-prime py-12 md:py-16 xl:py-24">
+      <section id="vision" className="bg-prime py-12 md:py-16 xl:pb-24">
         <div className="container mx-auto flex flex-col gap-6 px-6 md:flex-row ">
           <div className="overflow-hidden md:w-1/2 xl:mx-10">
             <img

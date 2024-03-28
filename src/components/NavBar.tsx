@@ -16,7 +16,6 @@ function classNames<T extends string | { [key: string]: boolean }>(
 
 export default function NavBar() {
   const handleClick = (section: string) => {
-    console.log("sup")
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
   }
 
@@ -32,7 +31,7 @@ export default function NavBar() {
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="bg-clip-text px-4 py-3 font-merriweather text-xl font-medium text-transparent text-white lg:text-3xl">
+                  <div className="bg-clip-text py-3 font-merriweather text-xl font-medium text-transparent text-white sm:text-2xl lg:text-3xl">
                     The Home Care Consultants
                   </div>
                 </div>
