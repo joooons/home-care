@@ -16,7 +16,6 @@ function classNames<T extends string | { [key: string]: boolean }>(
 
 export default function NavBar() {
   const handleClick = (section: string) => {
-    console.log("sup")
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
   }
 
