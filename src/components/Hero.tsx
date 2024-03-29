@@ -1,22 +1,37 @@
-import WaveDivider1 from "./WaveDivider1"
+import { useEffect, useState } from "react"
 
+import WaveDivider1 from "./WaveDivider1"
 import SvgGardener from "./SvgGardener"
 
-// import img_porch from "../assets/porch.jpg"
+import img_porch from "../assets/porch.jpg"
+import img_flower from "../assets/flower.jpg"
+import img_chile from "../assets/chile.jpg"
+
+const imgArray = [img_porch, img_flower, img_chile]
 
 export default function Hero() {
+  const [slide, setSlide] = useState(1)
+
   const handleClick = (section: string) => {
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
   }
 
+  useEffect(() => {
+    const count = setInterval(() => {
+      setSlide((prev) => (prev % 3) + 1)
+    }, 5000)
+    return () => clearInterval(count)
+  }, [])
+
   return (
     <>
-      <section className="relative w-full items-center justify-center ">
-        {/* <img
-          className="absolute inset-0 -z-10 h-5/6 w-full object-cover opacity-35 lg:h-full"
-          src={img_porch}
+      <section className="relative w-full items-center justify-center bg-white/40">
+        <img
+          id="hero-bkgd"
+          className="absolute inset-0 -z-10 h-full w-full object-cover lg:h-full"
+          src={imgArray[slide - 1]}
           alt="image of a house"
-        /> */}
+        />
 
         <WaveDivider1></WaveDivider1>
 
