@@ -13,7 +13,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length)
-    }, 5000)
+    }, 8000)
 
     return () => clearInterval(interval)
   }, [images.length])
@@ -25,10 +25,10 @@ const Carousel = () => {
           key={index}
           show={index === currentSlide}
           as="div"
-          enter="transition-opacity duration-1000"
+          enter="transition-opacity duration-[3000ms]"
           enterFrom="opacity-0"
           enterTo="opacity-200"
-          leave="transition-opacity duration-1000"
+          leave="transition-opacity duration-[3000ms]"
           leaveFrom="opacity-200"
           leaveTo="opacity-0"
           className="absolute h-full w-full"
