@@ -3,7 +3,7 @@ import Hero from "../components/Hero"
 import Vision from "../components/Vision"
 import WhatWeDo from "../components/WhatWeDo"
 import Testimonials from "../components/Testimonials"
-import ContactUs from "../components/ContactUs"
+import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 
 export default function HomePage() {
@@ -18,7 +18,7 @@ export default function HomePage() {
         <Vision></Vision>
         <WhatWeDo></WhatWeDo>
         <Testimonials></Testimonials>
-        <ContactUs></ContactUs>
+        <Contact></Contact>
       </main>
 
       <Footer></Footer>

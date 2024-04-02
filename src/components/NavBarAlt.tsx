@@ -5,7 +5,7 @@ const navigation = [
   { name: "Vision", current: false, scrollto: "vision" },
   { name: "What We Do", current: false, scrollto: "what" },
   { name: "Testimonials", current: false, scrollto: "testimony" },
-  { name: "Contact Us", current: false, scrollto: "contact" },
+  { name: "Contact", current: false, scrollto: "contact" },
 ]
 
 function classNames<T extends string | { [key: string]: boolean }>(
