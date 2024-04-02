@@ -1,8 +1,7 @@
+// import Carousel from "./Carousel"
+
 import WaveDivider1 from "./WaveDivider1"
-
 import SvgGardener from "./SvgGardener"
-
-// import img_porch from "../assets/porch.jpg"
 
 export default function Hero() {
   const handleClick = (section: string) => {
@@ -11,12 +10,8 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative w-full items-center justify-center ">
-        {/* <img
-          className="absolute inset-0 -z-10 h-5/6 w-full object-cover opacity-35 lg:h-full"
-          src={img_porch}
-          alt="image of a house"
-        /> */}
+      <section className="relative w-full items-center justify-center md:bg-gradient-to-r md:from-white md:from-30% md:via-white/80 md:via-50% md:to-emerald-50/20 md:to-60%">
+        {/* <Carousel></Carousel> */}
 
         <WaveDivider1></WaveDivider1>
 

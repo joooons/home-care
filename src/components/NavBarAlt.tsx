@@ -14,24 +14,24 @@ function classNames<T extends string | { [key: string]: boolean }>(
   return classes.filter(Boolean).join(" ")
 }
 
-export default function NavBar() {
+export default function NavBarAlt() {
   const handleClick = (section: string) => {
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
-    <Disclosure as="nav" className="absolute z-10 w-full ">
+    <Disclosure as="nav" className="absolute z-10 w-full bg-black/30">
       {({ open }) => (
         <>
-          {/* NavBar  */}
-          <div className="absolute h-24 w-full bg-second"></div>
+          <div className="absolute h-24 w-full"></div>
+
           <div className="container mx-auto px-6">
             <div className="relative z-10 flex h-24 items-center justify-between">
               <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-between">
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="bg-clip-text py-3 font-merriweather text-xl font-medium text-transparent text-white sm:text-2xl lg:text-3xl">
+                  <div className="text-golden bg-clip-text py-3 font-merriweather text-xl font-medium text-transparent sm:text-2xl lg:text-3xl">
                     The Home Care Consultants
                   </div>
                 </div>

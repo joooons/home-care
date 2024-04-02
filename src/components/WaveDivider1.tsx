@@ -1,7 +1,7 @@
 export default function WaveDivider1() {
   return (
     <>
-      <div className="absolute bottom-[-2px] -z-20 flex w-full flex-col justify-end">
+      <div className="-z-5 absolute bottom-[-2px] flex w-full flex-col justify-end">
         <svg
           id="visual"
           viewBox="0 0 900 200"

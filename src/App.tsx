@@ -1,29 +1,20 @@
-import NavBar from "./components/NavBar"
-import Hero from "./components/Hero"
-import Vision from "./components/Vision"
-import WhatWeDo from "./components/WhatWeDo"
-import Testimonials from "./components/Testimonials"
-import ContactUs from "./components/ContactUs"
-import Footer from "./components/Footer"
+// import React from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+// import Layout from "./Layout"
+import HomePage from "./pages//HomePage"
+import AltPage from "./pages/AltPage"
 
 import "./App.css"
 
 function App() {
   return (
     <>
-      <header>
-        <NavBar></NavBar>
-      </header>
-
-      <main>
-        <Hero></Hero>
-        <Vision></Vision>
-        <WhatWeDo></WhatWeDo>
-        <Testimonials></Testimonials>
-        <ContactUs></ContactUs>
-      </main>
-
-      <Footer></Footer>
+      <Router>
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="/alt" element={<AltPage />} />
+        </Routes>
+      </Router>
     </>
   )
 }
