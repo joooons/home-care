@@ -1,4 +1,4 @@
-import Carousel from "./Carousel"
+// import Carousel from "./Carousel"
 
 import WaveDivider1 from "./WaveDivider1"
 import SvgGardener from "./SvgGardener"
@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <>
       <section className="relative w-full items-center justify-center md:bg-gradient-to-r md:from-white md:from-30% md:via-white/80 md:via-50% md:to-emerald-50/20 md:to-60%">
-        <Carousel></Carousel>
+        {/* <Carousel></Carousel> */}
 
         <WaveDivider1></WaveDivider1>
 
