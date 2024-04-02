@@ -23,8 +23,8 @@ export default function NavBarAlt() {
     <Disclosure as="nav" className="absolute z-10 w-full ">
       {({ open }) => (
         <>
-          {/* NavBar  */}
-          <div className="absolute h-24 w-full bg-second"></div>
+          <div className="absolute h-24 w-full"></div>
+
           <div className="container mx-auto px-6">
             <div className="relative z-10 flex h-24 items-center justify-between">
               <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-between">

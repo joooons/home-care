@@ -9,13 +9,13 @@ export default function HeroAlt() {
     <>
       <section className="relative h-screen w-full items-center justify-center bg-black/80">
         <Carousel></Carousel>
-        <div className="container mx-auto flex h-full flex-col px-6 py-32 md:flex-row xl:pb-56">
-          <div className="flex h-full flex-col items-start justify-center space-y-6 md:w-1/2 xl:mr-10">
-            <h1 className="text-left text-3xl font-bold text-light lg:text-6xl dark:text-light">
+        <div className="container mx-auto flex h-full flex-col px-6 py-32 xl:pb-56">
+          <div className="flex h-full flex-col items-center justify-center space-y-6 ">
+            <h1 className="text-center text-3xl font-bold text-light md:text-4xl lg:text-6xl dark:text-light">
               We are <span className="text-light dark:text-light">CARE</span>{" "}
               experts
             </h1>
-            <p className="max-w-xl text-left text-xl font-medium text-light/80 dark:text-light/60">
+            <p className="max-w-xl text-center text-xl font-medium text-light/80 dark:text-light/60">
               We provide personalized home care services, focusing on daily
               activities and companionship to support the independence and
               well-being of our clients in their homes.
