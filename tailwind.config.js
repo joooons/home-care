@@ -18,11 +18,13 @@ export default {
         'soot': '#2A1B1B',
         'dark': "#000",
         'light': "#FFF",
-        // 'prime': "#4992FF",
+        'prime': "#4992FF",
+        'prime-hi': "#237AFC",
         // 'prime': "#5C4600",
-        'prime': "#FCC203",
+        // 'prime': "#FCC203",
         // 'second': "#4E31A3"
-        'second': "#14002E"
+        'second': "#14002E",
+        'golden': "#F7D128",
       },
     },
   },

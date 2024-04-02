@@ -20,7 +20,7 @@ export default function NavBarAlt() {
   }
 
   return (
-    <Disclosure as="nav" className="absolute z-10 w-full ">
+    <Disclosure as="nav" className="absolute z-10 w-full bg-black/30">
       {({ open }) => (
         <>
           <div className="absolute h-24 w-full"></div>
@@ -31,7 +31,7 @@ export default function NavBarAlt() {
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="bg-clip-text py-3 font-merriweather text-xl font-medium text-transparent text-white sm:text-2xl lg:text-3xl">
+                  <div className="text-golden bg-clip-text py-3 font-merriweather text-xl font-medium text-transparent sm:text-2xl lg:text-3xl">
                     The Home Care Consultants
                   </div>
                 </div>
