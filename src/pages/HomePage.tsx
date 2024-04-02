@@ -5,6 +5,7 @@ import WhatWeDo from "../components/WhatWeDo"
 import Testimonials from "../components/Testimonials"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
+import MiniOptions from "../components/MiniOptions"
 
 export default function HomePage() {
   return (
@@ -12,7 +13,6 @@ export default function HomePage() {
       <header>
         <NavBar></NavBar>
       </header>
-
       <main>
         <Hero></Hero>
         <Vision></Vision>
@@ -20,8 +20,8 @@ export default function HomePage() {
         <Testimonials></Testimonials>
         <Contact></Contact>
       </main>
-
       <Footer></Footer>
+      <MiniOptions></MiniOptions>
     </>
   )
 }
