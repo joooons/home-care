@@ -1,6 +1,9 @@
 import { Disclosure } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
+// import birdSVG from "../svg/hummingbird-svgrepo-com.svg"
+import SvgBird from "./SvgBird"
+
 const navigation = [
   { name: "Vision", current: false, scrollto: "vision" },
   { name: "What We Do", current: false, scrollto: "what" },
@@ -31,8 +34,9 @@ export default function NavBarAlt() {
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="text-golden bg-clip-text py-3 font-merriweather text-xl font-medium text-transparent sm:text-2xl lg:text-3xl">
-                    The Home Care Consultants
+                  <div className="flex flex-row justify-center gap-2 bg-clip-text py-3 font-merriweather text-xl font-medium text-light sm:text-2xl lg:text-3xl">
+                    <SvgBird color={"#FFFFFF"}></SvgBird>
+                    <span>The Home Care Consultants</span>
                   </div>
                 </div>
 
