@@ -26,7 +26,7 @@ export default function Hero() {
               activities and companionship to support the independence and
               well-being of our clients in their homes.
             </p>
-            <div className="flex justify-center">
+            <div className="z-10 flex justify-center">
               <button
                 className="focus-visible cursor-pointer rounded-full bg-prime px-6 py-3 font-medium text-light transition hover:bg-second"
                 onClick={() => handleClick("vision")}

@@ -1,24 +1,24 @@
-import NavBar from "../components/NavBarAlt"
-import Hero from "../components/HeroAlt"
-import Vision from "../components/VisionAlt"
-import WhatWeDo from "../components/WhatWeDoAlt"
-import Testimonials from "../components/TestimonialsAlt"
-import ContactUs from "../components/ContactAlt"
+import NavBarAlt from "../components/NavBarAlt"
+import HeroAlt from "../components/HeroAlt"
+import VisionAlt from "../components/VisionAlt"
+import WhatWeDoAlt from "../components/WhatWeDoAlt"
+import TestimonialsAlt from "../components/TestimonialsAlt"
+import ContactAlt from "../components/ContactAlt"
 import Footer from "../components/FooterAlt"
 
 export default function AltPage() {
   return (
     <>
       <header>
-        <NavBar></NavBar>
+        <NavBarAlt></NavBarAlt>
       </header>
 
       <main>
-        <Hero></Hero>
-        <Vision></Vision>
-        <WhatWeDo></WhatWeDo>
-        <Testimonials></Testimonials>
-        <ContactUs></ContactUs>
+        <HeroAlt></HeroAlt>
+        <VisionAlt></VisionAlt>
+        <WhatWeDoAlt></WhatWeDoAlt>
+        <TestimonialsAlt></TestimonialsAlt>
+        <ContactAlt></ContactAlt>
       </main>
 
       <Footer></Footer>

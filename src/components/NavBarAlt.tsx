@@ -1,5 +1,7 @@
 import { Disclosure } from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
+import { Bars3Icon, XMarkIcon, PhoneIcon } from "@heroicons/react/24/outline"
+
+import SvgBird from "./SvgBird"
 
 const navigation = [
   { name: "Vision", current: false, scrollto: "vision" },
@@ -27,34 +29,25 @@ export default function NavBarAlt() {
 
           <div className="container mx-auto px-6">
             <div className="relative z-10 flex h-24 items-center justify-between">
-              <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-between">
+              <div className="focus-visible:ring-purp-50/0 relative inline-flex cursor-pointer items-center justify-center rounded-md p-2 text-light hover:bg-white/50 focus:outline-none focus-visible:ring">
+                <PhoneIcon
+                  className="block h-8 w-8 stroke-1"
+                  aria-hidden="true"
+                />
+              </div>
+              <div className="flex flex-1 items-center justify-center">
                 {/* Brand Name */}
                 <div className="flex flex-shrink-0 items-center">
-                  {/* <img className='h-8 w-auto' src={icon} alt='Home Care'/> */}
-                  <div className="text-golden bg-clip-text py-3 font-merriweather text-xl font-medium text-transparent sm:text-2xl lg:text-3xl">
-                    The Home Care Consultants
+                  <div className="flex flex-row justify-center gap-2 bg-clip-text py-3 font-merriweather text-xl font-medium text-light sm:text-2xl lg:text-3xl">
+                    <span>Home Care</span>
+                    <SvgBird color={"#FFFFFF"}></SvgBird>
+                    <span>Consultants</span>
                   </div>
                 </div>
 
                 {/* Desktop Menu Items */}
-                <div className="hidden lg:ml-10 lg:block lg:py-4">
-                  <ul className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <li
-                        key={item.name}
-                        className={classNames(
-                          "cursor-pointer whitespace-nowrap rounded-md px-2 py-3  text-xl font-medium text-light hover:bg-white/30 hover:text-white"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                        onClick={() => handleClick(item.scrollto)}
-                      >
-                        {item.name}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
-              <div className="inset-y-0 left-0 flex items-center lg:hidden">
+              <div className="inset-y-0 left-0 flex items-center">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="focus-visible:ring-purp-50/0 relative inline-flex items-center justify-center rounded-md p-2 text-light hover:bg-white/50 focus:outline-none focus-visible:ring">
                   <span className="absolute -inset-0.5" />
@@ -76,7 +69,7 @@ export default function NavBarAlt() {
           </div>
 
           {/* Mobile Menu Items */}
-          <Disclosure.Panel className="lg:hidden">
+          <Disclosure.Panel>
             <ul className="flex flex-col justify-between gap-2 space-y-1 bg-black/90 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
