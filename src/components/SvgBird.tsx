@@ -7,8 +7,8 @@ export default function SvgBird({ color = "#000000" }: Props) {
     <>
       <svg
         fill={color}
-        height="40px"
-        width="40px"
+        height="35px"
+        width="35px"
         version="1.1"
         id="Capa_1"
         xmlns="http://www.w3.org/2000/svg"
