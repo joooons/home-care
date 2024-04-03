@@ -3,6 +3,32 @@ import img_flower from "../assets/flower.jpg"
 import img_chile from "../assets/chile.jpg"
 import img_house from "../assets/house.jpg"
 
+const testimonials: any[] = [
+  {
+    image: img_hug,
+    name: "Anne A.",
+    message: "I couldn't have done this without yall nice people.",
+  },
+  {
+    image: img_flower,
+    name: "Bob B.",
+    message:
+      "I felt so reassured by the warmth and professionalism that each of the consultants possessed.",
+  },
+  {
+    image: img_chile,
+    name: "Catherine C.",
+    message:
+      "Their service really took a heavy weight off of our backs. My parents love spending more time with their grandchildren.",
+  },
+  {
+    image: img_house,
+    name: "Debbie D.",
+    message:
+      "It meant so much to me that I could visit my grandma at her house, where I used to play, instead of at a hospital!",
+  },
+]
+
 export default function TestimonialsAlt() {
   return (
     <>
@@ -15,64 +41,27 @@ export default function TestimonialsAlt() {
             TESTIMONIALS
           </h1>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
-            <div className="flex flex-col gap-2">
-              <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
-                <img
-                  className="aspect-video h-full w-full object-cover"
-                  src={img_hug}
-                  alt="image of a hug"
-                />
-              </div>
-              <h3 className="text-2xl text-light">
-                "I couldn't have done this without yall nice people."
-              </h3>
-              <div className="text-xl text-light/50">Albert Ainstein</div>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
-                <img
-                  className="aspect-video h-full w-full object-cover"
-                  src={img_flower}
-                  alt="image of a flower"
-                />
-              </div>
-              <h3 className="text-2xl text-light">
-                "I felt so reassured by the warmth and professionalism that each
-                of the consultants possessed."
-              </h3>
-              <div className="text-xl text-light/50">Bob Boss</div>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
-                <img
-                  className="aspect-video h-full w-full object-cover"
-                  src={img_chile}
-                  alt="image of a chile"
-                />
-              </div>
-              <h3 className="text-2xl text-light">
-                "Their service really took a heavy weight off of our backs. My
-                parents love spending more time with their grandchildren."
-              </h3>
-              <div className="text-xl text-light/50">Charlie Chapstick</div>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <div className="w-full overflow-hidden rounded-3xl bg-white drop-shadow-xl md:w-auto">
-                <img
-                  className="aspect-video h-full w-full object-cover"
-                  src={img_house}
-                  alt="image of a house"
-                />
-              </div>
-              <h3 className="text-2xl text-light">
-                "It meant so much to me that I could visit my grandma at her
-                house, where I used to play, instead of at a hospital!"
-              </h3>
-              <div className="text-xl text-light/50">Debbie Downer</div>
-            </div>
+            {testimonials.map((item) => {
+              return (
+                <>
+                  <div className="relative flex h-full flex-col gap-2 overflow-hidden rounded-xl">
+                    <div className="h-full w-full overflow-hidden drop-shadow-xl md:w-auto">
+                      <img
+                        className="h-full w-full object-cover"
+                        src={item.image}
+                        alt="image of a hug"
+                      />
+                    </div>
+                    <div className="absolute inset-y-0 flex flex-col justify-end gap-3 bg-gradient-to-b from-white/0 via-second/60 to-second/70 px-6 pb-6">
+                      <h3 className="text-left text-xl text-light/70">
+                        "{item.message}"
+                      </h3>
+                      <div className="text-xl text-light">{item.name}</div>
+                    </div>
+                  </div>
+                </>
+              )
+            })}
           </div>
         </div>
       </section>
