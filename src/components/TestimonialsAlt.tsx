@@ -1,29 +1,34 @@
-import img_hug from "../assets/hug.jpg"
-import img_flower from "../assets/flower.jpg"
-import img_chile from "../assets/chile.jpg"
-import img_house from "../assets/house.jpg"
+// import img_hug from "../assets/hug.jpg"
+// import img_flower from "../assets/flower.jpg"
+// import img_chile from "../assets/chile.jpg"
+// import img_house from "../assets/house.jpg"
+
+import human_1 from "../assets/human-1.jpg"
+import human_2 from "../assets/human-2.jpg"
+import human_3 from "../assets/human-3.jpg"
+import human_4 from "../assets/human-4.jpg"
 
 const testimonials: any[] = [
   {
-    image: img_hug,
-    name: "Anne A.",
-    message: "I couldn't have done this without yall nice people.",
+    image: human_1,
+    name: "Annie A.",
+    message: "I couldn't have done this without the nice people at Home Care.",
   },
   {
-    image: img_flower,
-    name: "Bob B.",
+    image: human_2,
+    name: "Brian B.",
     message:
       "I felt so reassured by the warmth and professionalism that each of the consultants possessed.",
   },
   {
-    image: img_chile,
-    name: "Catherine C.",
+    image: human_3,
+    name: "Chris C.",
     message:
       "Their service really took a heavy weight off of our backs. My parents love spending more time with their grandchildren.",
   },
   {
-    image: img_house,
-    name: "Debbie D.",
+    image: human_4,
+    name: "Daisy D.",
     message:
       "It meant so much to me that I could visit my grandma at her house, where I used to play, instead of at a hospital!",
   },
@@ -37,7 +42,7 @@ export default function TestimonialsAlt() {
         className="flex flex-col justify-center gap-12 bg-slate-200 py-12 pb-20"
       >
         <div className="container mx-auto flex flex-col gap-8 px-6">
-          <h1 className="font-libre text-center text-3xl font-bold text-tan md:text-4xl lg:text-6xl">
+          <h1 className="text-center font-libre text-3xl font-bold text-tan md:text-4xl lg:text-6xl">
             Testimonials
           </h1>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
@@ -51,7 +56,7 @@ export default function TestimonialsAlt() {
                         src={item.image}
                         alt={"image of " + item.image}
                       />
-                      <div className="font-newsreader absolute inset-y-0 w-full bg-dark/20 transition duration-300 ease-in-out group-hover:bg-dark/60 ">
+                      <div className="absolute inset-y-0 w-full bg-dark/30 font-newsreader transition duration-300 ease-in-out group-hover:bg-dark/70 ">
                         <div className="flex h-full w-full flex-col justify-end gap-3 px-8 pb-8 transition duration-300 ease-in-out group-hover:scale-105">
                           <p className="mx-auto text-left text-xl text-light">
                             "{item.message}"
