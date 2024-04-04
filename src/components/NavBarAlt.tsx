@@ -25,7 +25,7 @@ export default function NavBarAlt() {
     <Disclosure as="nav" className="absolute z-10 w-full">
       {({ open }) => (
         <>
-          <div className="absolute h-24 w-full bg-second/30"></div>
+          <div className="absolute h-24 w-full bg-white/20"></div>
 
           <div className="container mx-auto px-6">
             <div className="relative z-10 flex h-24 items-center justify-between">
@@ -38,7 +38,7 @@ export default function NavBarAlt() {
               <div className="flex flex-1 items-center justify-center">
                 {/* Brand Name */}
 
-                <div className="flex flex-row justify-center gap-2 bg-clip-text py-3 font-merriweather text-xl font-medium text-light sm:text-2xl lg:text-3xl">
+                <div className="font-italianno flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-light sm:text-2xl lg:text-5xl">
                   <span className="hidden md:block">Home Care</span>
                   <SvgBird color={"#FFFFFF"}></SvgBird>
                   <span className="hidden md:block">Consultants</span>
