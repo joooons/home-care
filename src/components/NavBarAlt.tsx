@@ -41,9 +41,9 @@ export default function NavBarAlt() {
               <div className="flex flex-1 items-center justify-center">
                 {/* Brand Name */}
 
-                <div className="font-playball flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-tan sm:text-2xl lg:text-4xl">
+                <div className="flex flex-row justify-center gap-2 bg-clip-text py-3 font-playball text-xl font-medium text-tan sm:text-2xl lg:text-4xl">
                   <span className="block md:hidden">
-                    <SvgBird color={"#D4A373"}></SvgBird>
+                    <SvgBird opacity={1} strokeWidth={0}></SvgBird>
                   </span>
                   <span className="hidden md:block">Home Care</span>
                   <span className="hidden md:block">Company</span>
