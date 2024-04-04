@@ -1,4 +1,4 @@
-import WaveDivider2 from "./WaveDivider2"
+// import WaveDivider2 from "./WaveDivider2"
 
 import img_stare from "../assets/stare.jpg"
 import img_line_wave from "../assets/line-wave.jpg"
@@ -13,11 +13,11 @@ export default function WhatWeDoAlt() {
           alt="image of wave line art"
         />
 
-        <WaveDivider2></WaveDivider2>
+        {/* <WaveDivider2></WaveDivider2> */}
 
-        <div className="container relative mx-auto flex flex-col items-center justify-center gap-8 p-16 px-6 pb-40 md:flex-row lg:gap-0">
+        <div className="container relative mx-auto flex flex-col items-center justify-center gap-8 p-16 px-6 pb-20 md:flex-row lg:gap-0">
           <div className="w-full sm:px-16 xl:mx-10">
-            <div className="aspect-square overflow-hidden rounded-full bg-blue-500 shadow-lg ">
+            <div className="aspect-square overflow-hidden rounded-full shadow-lg ">
               <img
                 className="h-full w-full object-cover"
                 src={img_stare}
@@ -26,12 +26,22 @@ export default function WhatWeDoAlt() {
             </div>
           </div>
           <div className="flex w-full flex-col gap-6 md:order-first xl:mx-10">
-            <h1 className="max-w-xl text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl dark:text-light">
-              WHAT WE DO
+            <h1 className="font-libre max-w-xl text-left text-3xl font-bold [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl dark:text-light">
+              What We Do
             </h1>
-            <div className="flex flex-col gap-4 text-left text-xl font-medium text-dark/60 lg:text-xl dark:text-light/60">
-              <p>We will treat you like family, because you are family.</p>
-              <p>We serve homes in Whittier, La Mirada, and Fullerton.</p>
+            <div className="font-newsreader flex flex-col gap-4 text-left text-xl font-medium text-dark/60 lg:text-xl dark:text-light/60">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita voluptatum earum animi non nesciunt. Est reiciendis aut
+                eius unde doloribus necessitatibus consectetur atque aspernatur
+                autem, debitis neque facere suscipit laborum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita voluptatum earum animi non nesciunt. Est reiciendis aut
+                eius unde doloribus necessitatibus consectetur atque aspernatur
+                autem, debitis neque facere suscipit laborum.
+              </p>
             </div>
           </div>
         </div>

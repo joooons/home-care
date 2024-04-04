@@ -34,12 +34,12 @@ export default function TestimonialsAlt() {
     <>
       <section
         id="testimony"
-        className="flex flex-col justify-center gap-12 bg-second py-12 pb-24"
+        className="flex flex-col justify-center gap-12 bg-dark/5 py-12 pb-20"
       >
         <div className="container mx-auto flex flex-col gap-8 px-6">
-          <h1 className="text-center text-3xl font-bold text-light [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:text-4xl lg:text-6xl">
-            TESTIMONIALS
-          </h1>
+          {/* <h1 className="font-libre text-center text-3xl font-bold [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] md:text-4xl lg:text-6xl">
+            Testimonials
+          </h1> */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
             {testimonials.map((item) => {
               return (
@@ -47,17 +47,23 @@ export default function TestimonialsAlt() {
                   <div className="relative flex h-full flex-col gap-2 overflow-hidden rounded-xl">
                     <div className="h-full w-full overflow-hidden drop-shadow-xl md:w-auto">
                       <img
-                        className="h-full w-full object-cover"
+                        className="aspect-square object-cover"
                         src={item.image}
-                        alt="image of a hug"
+                        alt={"image of " + item.image}
                       />
+                      <div className="font-newsreader absolute inset-y-0 flex w-full flex-col justify-end gap-3 bg-gradient-to-b from-white/0 via-second/60 to-second/70 px-6 pb-6">
+                        <p className="mx-auto text-left text-xl text-light/70">
+                          "{item.message}"
+                        </p>
+                        <div className="text-xl text-light">{item.name}</div>
+                      </div>
                     </div>
-                    <div className="absolute inset-y-0 flex flex-col justify-end gap-3 bg-gradient-to-b from-white/0 via-second/60 to-second/70 px-6 pb-6">
-                      <h3 className="text-left text-xl text-light/70">
+                    {/* <div className="font-newsreader absolute inset-y-0 flex flex-col justify-end gap-3 bg-gradient-to-b from-white/0 via-second/60 to-second/70 px-6 pb-6">
+                      <p className="text-left text-xl text-light/70">
                         "{item.message}"
-                      </h3>
+                      </p>
                       <div className="text-xl text-light">{item.name}</div>
-                    </div>
+                    </div> */}
                   </div>
                 </>
               )

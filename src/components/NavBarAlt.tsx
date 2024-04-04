@@ -38,10 +38,12 @@ export default function NavBarAlt() {
               <div className="flex flex-1 items-center justify-center">
                 {/* Brand Name */}
 
-                <div className="font-italianno flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-light sm:text-2xl lg:text-5xl">
-                  <span className="hidden md:block">Home Care</span>
-                  <SvgBird color={"#FFFFFF"}></SvgBird>
-                  <span className="hidden md:block">Consultants</span>
+                <div className="font-playball flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-light sm:text-2xl lg:text-4xl">
+                  <span className="block md:hidden">
+                    <SvgBird color={"#FFFFFF"}></SvgBird>
+                  </span>
+                  <span className="hidden md:block">Age Well</span>
+                  <span className="hidden md:block">Care Consultants</span>
                 </div>
 
                 {/* Desktop Menu Items */}

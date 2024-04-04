@@ -25,8 +25,8 @@ export default function MiniOptions({ text = "ALT", link = "/alt" }: Props) {
   }
 
   function handleMouseLeave() {
-    // setShow(false)
-    console.log("nothing")
+    setShow(false)
+    // console.log("nothing")
   }
 
   return (
@@ -35,8 +35,8 @@ export default function MiniOptions({ text = "ALT", link = "/alt" }: Props) {
         {show &&
           fontArray.map((item) => {
             return (
-              <div className="w-full bg-white p-3 text-left text-xl">
-                <p className={item}>Home Care Concierge - {item}</p>
+              <div className="w-full bg-white px-3 py-1 text-left text-2xl">
+                <p className={item}>We are CARE experts - {item}</p>
               </div>
             )
           })}
