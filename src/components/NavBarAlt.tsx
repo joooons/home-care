@@ -21,6 +21,8 @@ export default function NavBarAlt() {
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
   }
 
+  const iconColor = "#D4A373"
+
   return (
     <Disclosure as="nav" className="absolute z-10 w-full">
       {({ open }) => (
@@ -33,14 +35,15 @@ export default function NavBarAlt() {
                 <PhoneIcon
                   className="stroke-4 block h-8 w-8"
                   aria-hidden="true"
+                  color={iconColor}
                 />
               </div>
               <div className="flex flex-1 items-center justify-center">
                 {/* Brand Name */}
 
-                <div className="font-playball flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-light sm:text-2xl lg:text-4xl">
+                <div className="font-playball flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-light text-tan sm:text-2xl lg:text-4xl">
                   <span className="block md:hidden">
-                    <SvgBird color={"#FFFFFF"}></SvgBird>
+                    <SvgBird color={"#D4A373"}></SvgBird>
                   </span>
                   <span className="hidden md:block">Home Care</span>
                   <span className="hidden md:block">Company</span>
@@ -57,11 +60,13 @@ export default function NavBarAlt() {
                     <XMarkIcon
                       className="block h-8 w-8 stroke-2"
                       aria-hidden="true"
+                      color={iconColor}
                     />
                   ) : (
                     <Bars3Icon
                       className="block h-8 w-8 stroke-2"
                       aria-hidden="true"
+                      color={iconColor}
                     />
                   )}
                 </Disclosure.Button>
@@ -78,7 +83,7 @@ export default function NavBarAlt() {
                     key={item.name}
                     as="li"
                     className={classNames(
-                      "block cursor-pointer rounded-md px-3 py-4 text-2xl text-light  hover:animate-pulse hover:[text-shadow:_0px_0px_25px_rgb(255_255_255_/_70%)]"
+                      "block cursor-pointer rounded-md px-3 py-4 text-2xl text-tan  hover:animate-pulse hover:[text-shadow:_0px_0px_25px_rgb(255_255_255_/_70%)]"
                     )}
                     aria-current={item.current ? "page" : undefined}
                     onClick={() => handleClick(item.scrollto)}

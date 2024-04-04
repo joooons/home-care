@@ -11,7 +11,7 @@ export default function HeroAlt() {
         <Carousel></Carousel>
         <div className="container mx-auto flex h-full flex-col px-6 py-32 xl:pb-56">
           <div className="flex h-full flex-col items-center justify-center space-y-6 ">
-            <h1 className="font-libre text-center text-3xl font-bold text-prime md:text-4xl lg:text-6xl dark:text-light">
+            <h1 className="font-libre text-center text-3xl font-bold text-tan md:text-4xl lg:text-6xl dark:text-light">
               We care for your loved ones
             </h1>
             <p className="font-newsreader max-w-xl text-center text-xl font-medium text-light/80 dark:text-light/60">
