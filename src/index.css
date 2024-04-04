@@ -4,31 +4,72 @@
 
 @layer base {
   @font-face {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap")
-      format("woff2");
-  }
-
-  @font-face {
-    font-family: "Libre Bodoni", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?&family=Libre+Bodoni:wght@500&display=swap")
-      format("woff2");
-  }
-
-  @font-face {
-    font-family: "Merriweather", serif;
+    font-family: "Ephesis", cursive;
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
-    src: url("https://fonts.googleapis.com/css2?&family=Merriweather&display=swap")
-      format("woff2");
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
+
+    /* src: url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Upright:wght@300;400;500;600;700&family=Ephesis&family=Italianno&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap")
+      format("woff2"); */
+  }
+
+  @font-face {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2@display=swap") format("woff2");
   }
 }
 
