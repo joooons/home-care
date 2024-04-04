@@ -12,7 +12,7 @@ export default function HeroAlt() {
         <div className="container mx-auto flex h-full flex-col px-6 py-32 xl:pb-56">
           <div className="flex h-full flex-col items-center justify-center space-y-6 ">
             <h1 className="font-libre text-center text-3xl font-bold text-tan md:text-4xl lg:text-6xl dark:text-light">
-              We care for your loved ones
+              We <span className="text-prime ">care</span> for your loved ones
             </h1>
             <p className="font-newsreader max-w-xl text-center text-xl font-medium text-light/80 dark:text-light/60">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -23,7 +23,7 @@ export default function HeroAlt() {
 
             <div className="flex justify-center">
               <button
-                className="focus-visible cursor-pointer rounded-full bg-prime px-6 py-3 font-medium text-light transition hover:bg-prime-hi"
+                className="focus-visible cursor-pointer border-4 border-tan bg-transparent px-6 py-3 font-medium text-light transition hover:border-prime"
                 onClick={() => handleClick("vision")}
               >
                 LEARN MORE

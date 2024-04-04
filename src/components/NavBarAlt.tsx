@@ -41,7 +41,7 @@ export default function NavBarAlt() {
               <div className="flex flex-1 items-center justify-center">
                 {/* Brand Name */}
 
-                <div className="font-playball flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-light text-tan sm:text-2xl lg:text-4xl">
+                <div className="font-playball flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-tan sm:text-2xl lg:text-4xl">
                   <span className="block md:hidden">
                     <SvgBird color={"#D4A373"}></SvgBird>
                   </span>
@@ -83,7 +83,7 @@ export default function NavBarAlt() {
                     key={item.name}
                     as="li"
                     className={classNames(
-                      "block cursor-pointer rounded-md px-3 py-4 text-2xl text-tan  hover:animate-pulse hover:[text-shadow:_0px_0px_25px_rgb(255_255_255_/_70%)]"
+                      "block cursor-pointer rounded-md px-3 py-4 text-2xl text-tan  hover:animate-pulse hover:text-prime"
                     )}
                     aria-current={item.current ? "page" : undefined}
                     onClick={() => handleClick(item.scrollto)}

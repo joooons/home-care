@@ -7,7 +7,7 @@ export default function VisionAlt() {
         <div className="container mx-auto flex flex-col gap-6 px-6 pb-20 md:flex-row ">
           <div className="overflow-hidden md:w-1/2 xl:mx-10">
             <img
-              className="h-full w-full rounded-2xl object-cover shadow-lg"
+              className="h-full w-full object-cover shadow-lg"
               src={img_convo}
               alt="image of a conversation"
             />
