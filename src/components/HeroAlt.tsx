@@ -23,7 +23,7 @@ export default function HeroAlt() {
 
             <div className="flex justify-center">
               <button
-                className="focus-visible cursor-pointer border-4 border-tan bg-transparent px-6 py-3 font-medium text-light transition hover:border-prime"
+                className="focus-visible cursor-pointer border-2 border-tan bg-transparent px-6 py-3 font-medium text-light transition hover:border-prime"
                 onClick={() => handleClick("vision")}
               >
                 LEARN MORE
