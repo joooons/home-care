@@ -5,6 +5,7 @@ import WhatWeDoAlt from "../components/WhatWeDoAlt"
 import TestimonialsAlt from "../components/TestimonialsAlt"
 import ContactAlt from "../components/ContactAlt"
 import Footer from "../components/FooterAlt"
+import MiniOptions from "../components/MiniOptions"
 
 export default function AltPage() {
   return (
@@ -19,6 +20,7 @@ export default function AltPage() {
         <WhatWeDoAlt></WhatWeDoAlt>
         <TestimonialsAlt></TestimonialsAlt>
         <ContactAlt></ContactAlt>
+        <MiniOptions text="HOME" link="/"></MiniOptions>
       </main>
 
       <Footer></Footer>

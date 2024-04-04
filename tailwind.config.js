@@ -6,9 +6,15 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'alegreya': ['"Alegreya Sans"'],
-      'bodoni': ['"Libre Bodoni"'],
-      'merriweather': ['"Merriweather"']
+      'ephesis': ['"Ephesis"'],
+      'italianno': ['"Italianno"'],
+      'playball': ['"Playball"'],
+      'allura': ['"Allura"'],
+      'playfair': ['"Playfair"'],
+      'libre': ['"Libre Baskerville"'],
+      'source': ['"Source Serif 4"'],
+      'cormorant': ['"Cormorant Upright"'],
+      'newsreader': ['"Newsreader"'],
     },
     extend: {
       colors: {

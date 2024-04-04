@@ -11,17 +11,19 @@ export default function HeroAlt() {
         <Carousel></Carousel>
         <div className="container mx-auto flex h-full flex-col px-6 py-32 xl:pb-56">
           <div className="flex h-full flex-col items-center justify-center space-y-6 ">
-            <h1 className="text-center text-3xl font-bold text-prime md:text-4xl lg:text-6xl dark:text-light">
-              We are CARE experts
+            <h1 className="font-libre text-center text-3xl font-bold text-tan md:text-4xl lg:text-6xl dark:text-light">
+              We <span className="text-prime ">care</span> for your loved ones
             </h1>
-            <p className="max-w-xl text-center text-xl font-medium text-light/80 dark:text-light/60">
-              We provide personalized home care services, focusing on daily
-              activities and companionship to support the independence and
-              well-being of our clients in their homes.
+            <p className="font-newsreader max-w-xl text-center text-xl font-medium text-light/80 dark:text-light/60">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis mollitia vero vel quo cupiditate sint quis laborum
+              accusantium velit eos, pariatur necessitatibus, provident amet
+              voluptatibus odio, consequuntur eaque non tenetur!
             </p>
+
             <div className="flex justify-center">
               <button
-                className="focus-visible cursor-pointer rounded-full bg-prime px-6 py-3 font-medium text-light transition hover:bg-prime-hi"
+                className="focus-visible cursor-pointer border-4 border-tan bg-transparent px-6 py-3 font-medium text-light transition hover:border-prime"
                 onClick={() => handleClick("vision")}
               >
                 LEARN MORE
