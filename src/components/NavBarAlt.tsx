@@ -42,8 +42,8 @@ export default function NavBarAlt() {
                   <span className="block md:hidden">
                     <SvgBird color={"#FFFFFF"}></SvgBird>
                   </span>
-                  <span className="hidden md:block">Age Well</span>
-                  <span className="hidden md:block">Care Consultants</span>
+                  <span className="hidden md:block">Home Care</span>
+                  <span className="hidden md:block">Company</span>
                 </div>
 
                 {/* Desktop Menu Items */}

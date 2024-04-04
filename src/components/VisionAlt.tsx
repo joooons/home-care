@@ -17,7 +17,7 @@ export default function VisionAlt() {
             <h1 className="font-libre text-left text-3xl font-bold [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] sm:text-center sm:text-4xl md:text-6xl lg:text-6xl">
               Vision
             </h1>
-            <div className="font-newsreader text-left text-xl font-medium text-dark/60 sm:text-center ">
+            <div className="font-newsreader flex flex-col gap-4 text-left text-xl font-medium text-dark/60 sm:text-center">
               <p className="whitespace-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Expedita voluptatum earum animi non nesciunt. Est reiciendis aut

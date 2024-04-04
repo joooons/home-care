@@ -1,5 +1,15 @@
 // import WaveDivider2 from "./WaveDivider2"
 
+import {
+  HeartIcon,
+  HomeIcon,
+  // LightBulbIcon,
+  // SparklesIcon,
+  // StarIcon,
+  // SunIcon,
+  TrophyIcon,
+} from "@heroicons/react/24/outline"
+
 import img_stare from "../assets/stare.jpg"
 import img_line_wave from "../assets/line-wave.jpg"
 
@@ -31,12 +41,29 @@ export default function WhatWeDoAlt() {
             </h1>
             <div className="font-newsreader flex flex-col gap-4 text-left text-xl font-medium text-dark/60 lg:text-xl dark:text-light/60">
               <p>
+                <span className="flex justify-center">
+                  <HeartIcon className="h-8 w-8 stroke-2" aria-hidden="true" />
+                </span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Expedita voluptatum earum animi non nesciunt. Est reiciendis aut
                 eius unde doloribus necessitatibus consectetur atque aspernatur
                 autem, debitis neque facere suscipit laborum.
               </p>
+
               <p>
+                <span className="flex justify-center">
+                  <HomeIcon className="h-8 w-8 stroke-2" aria-hidden="true" />
+                </span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita voluptatum earum animi non nesciunt. Est reiciendis aut
+                eius unde doloribus necessitatibus consectetur atque aspernatur
+                autem, debitis neque facere suscipit laborum.
+              </p>
+
+              <p>
+                <span className="flex justify-center">
+                  <TrophyIcon className="h-8 w-8 stroke-2" aria-hidden="true" />
+                </span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Expedita voluptatum earum animi non nesciunt. Est reiciendis aut
                 eius unde doloribus necessitatibus consectetur atque aspernatur
