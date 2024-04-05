@@ -27,10 +27,10 @@ export default function NavBarAlt() {
     <Disclosure as="nav" className="absolute z-10 w-full">
       {({ open }) => (
         <>
-          <div className="absolute h-24 w-full border-b-2 border-tan"></div>
+          <div className="absolute h-24 w-full "></div>
 
           <div className="container mx-auto px-6">
-            <div className="relative z-10 flex h-24 items-center justify-between">
+            <div className="relative z-10 flex h-24 items-center justify-between border-b-2 border-tan">
               <div className="focus-visible:ring-purp-50/0 relative inline-flex cursor-pointer items-center justify-center rounded-md p-2 text-light hover:animate-pulse focus:outline-none focus-visible:ring ">
                 <PhoneIcon
                   className="stroke-4 block h-8 w-8"
