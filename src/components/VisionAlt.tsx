@@ -7,13 +7,13 @@ export default function VisionAlt() {
     <>
       <section
         id="vision"
-        className="relative h-full w-full bg-top bg-repeat"
+        className="relative h-full w-full bg-white bg-top bg-repeat"
         style={{
           backgroundImage: `url(${svg_pattern})`,
-          backgroundSize: "200px",
+          backgroundSize: "300px",
         }}
       >
-        <div className="container mx-auto flex flex-col gap-6 px-16 py-16">
+        <div className="container mx-auto flex flex-col gap-6 px-16 py-16 lg:px-32 xl:px-60">
           {/* <div className="overflow-hidden md:w-1/2 xl:mx-10">
             <img
               className="h-full w-full object-cover shadow-lg"
