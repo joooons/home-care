@@ -20,6 +20,7 @@ export default function AltPage() {
         <WhatWeDoAlt></WhatWeDoAlt>
         <TestimonialsAlt></TestimonialsAlt>
         <ContactAlt></ContactAlt>
+
         {/* <MiniOptions text="HOME" link="/"></MiniOptions> */}
       </main>
 

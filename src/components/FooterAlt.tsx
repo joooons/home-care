@@ -37,11 +37,11 @@ export default function FooterAlt() {
                 <p className="text-gray-600 transition-colors duration-300 hover:cursor-pointer hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
                   Terms & Conditions
                 </p>
-                <p className="text-gray-600 transition-colors duration-300 hover:cursor-pointer hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
+                {/* <p className="text-gray-600 transition-colors duration-300 hover:cursor-pointer hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
                   <a href="https://storyset.com/people" className="font-normal">
                     People illustrations by Storyset
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function FooterAlt() {
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:flex sm:items-center sm:justify-center">
-              <div className="flex gap-4 hover:cursor-pointer">
+              {/* <div className="flex gap-4 hover:cursor-pointer">
                 <img
                   src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg"
                   width="30"
@@ -75,10 +75,10 @@ export default function FooterAlt() {
                   height="30"
                   alt="in"
                 />
-              </div>
+              </div> */}
             </div>
             <p className="font-sans text-start md:p-4 md:text-center md:text-lg">
-              © 2024 The Home Care Company. All rights reserved.
+              {/* © 2024 The Home Care Company. All rights reserved. */}
             </p>
           </div>
         </div>

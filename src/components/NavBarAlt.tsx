@@ -27,10 +27,10 @@ export default function NavBarAlt() {
     <Disclosure as="nav" className="absolute z-10 w-full">
       {({ open }) => (
         <>
-          <div className="absolute h-24 w-full bg-white/20"></div>
+          <div className="absolute h-24 w-full "></div>
 
           <div className="container mx-auto px-6">
-            <div className="relative z-10 flex h-24 items-center justify-between">
+            <div className="relative z-10 flex h-24 items-center justify-between border-b-2 border-tan">
               <div className="focus-visible:ring-purp-50/0 relative inline-flex cursor-pointer items-center justify-center rounded-md p-2 text-light hover:animate-pulse focus:outline-none focus-visible:ring ">
                 <PhoneIcon
                   className="stroke-4 block h-8 w-8"
@@ -41,9 +41,9 @@ export default function NavBarAlt() {
               <div className="flex flex-1 items-center justify-center">
                 {/* Brand Name */}
 
-                <div className="font-playball flex flex-row justify-center gap-2 bg-clip-text py-3 text-xl font-medium text-tan sm:text-2xl lg:text-4xl">
+                <div className="flex flex-row justify-center gap-2 bg-clip-text py-3 font-playball text-xl font-medium text-tan sm:text-2xl lg:text-4xl">
                   <span className="block md:hidden">
-                    <SvgBird color={"#D4A373"}></SvgBird>
+                    <SvgBird opacity={1} strokeWidth={0}></SvgBird>
                   </span>
                   <span className="hidden md:block">Home Care</span>
                   <span className="hidden md:block">Company</span>

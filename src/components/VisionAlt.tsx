@@ -1,34 +1,40 @@
-import img_convo from "../assets/convo.jpg"
+// import img_convo from "../assets/convo.jpg"
+// import SvgPattern from "./SvgPattern"
+import svg_pattern from "../svg/pattern.svg"
 
 export default function VisionAlt() {
   return (
     <>
-      <section id="vision" className="bg-slate-200 py-12 md:py-16 xl:pb-24">
-        <div className="container mx-auto flex flex-col gap-6 px-6 pb-20 md:flex-row ">
-          <div className="overflow-hidden md:w-1/2 xl:mx-10">
+      <section
+        id="vision"
+        className="relative h-full w-full bg-white bg-top bg-repeat"
+        style={{
+          backgroundImage: `url(${svg_pattern})`,
+          backgroundSize: "300px",
+        }}
+      >
+        <div className="container mx-auto flex flex-col gap-6 px-16 py-16 lg:px-32 xl:px-60">
+          {/* <div className="overflow-hidden md:w-1/2 xl:mx-10">
             <img
               className="h-full w-full object-cover shadow-lg"
               src={img_convo}
               alt="image of a conversation"
             />
-          </div>
+          </div> */}
 
-          <div className="flex flex-col justify-center space-y-6 whitespace-nowrap md:w-1/2 xl:mx-10">
-            <h1 className="font-libre text-left text-3xl font-bold text-tan sm:text-center sm:text-4xl md:text-6xl lg:text-6xl">
+          <div className="mx-auto flex flex-col justify-center space-y-6 whitespace-nowrap bg-white p-16">
+            <h1 className="text-center font-libre text-3xl font-bold text-tan sm:text-4xl md:text-6xl lg:text-6xl">
               Vision
             </h1>
-            <div className="font-newsreader flex flex-col gap-4 text-left text-xl font-medium text-dark/60 sm:text-center">
+            <div className="flex flex-col gap-4 text-center font-newsreader text-xl font-medium text-dark/60 sm:text-center">
               <p className="whitespace-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita voluptatum earum animi non nesciunt. Est reiciendis aut
-                eius unde doloribus necessitatibus consectetur atque aspernatur
-                autem, debitis neque facere suscipit laborum.
+                Expedita voluptatum earum animi non nesciunt.
               </p>
               <p className="whitespace-normal">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita voluptatum earum animi non nesciunt. Est reiciendis aut
-                eius unde doloribus necessitatibus consectetur atque aspernatur
-                autem, debitis neque facere suscipit laborum.
+                Est reiciendis aut eius unde doloribus necessitatibus
+                consectetur atque aspernatur autem, debitis neque facere
+                suscipit laborum.
               </p>
             </div>
           </div>
