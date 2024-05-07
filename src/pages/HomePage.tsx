@@ -21,7 +21,7 @@ export default function HomePage() {
         <Contact></Contact>
       </main>
       <Footer></Footer>
-      <MiniOptions></MiniOptions>
+      <MiniOptions text="ALT" link="/alt"></MiniOptions>
     </>
   )
 }

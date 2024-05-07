@@ -20,12 +20,12 @@ export default function Vision() {
             <div className="text-left text-xl font-medium text-white/70 sm:text-center ">
               <p className="whitespace-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita voluptatum earum animi non nesciunt.
               </p>
               <p className="whitespace-normal">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p className="whitespace-normal">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Est reiciendis aut eius unde doloribus necessitatibus
+                consectetur atque aspernatur autem, debitis neque facere
+                suscipit laborum.
               </p>
             </div>
           </div>

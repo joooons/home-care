@@ -18,13 +18,14 @@ export default function Hero() {
         <div className="container mx-auto flex flex-col px-6 py-32 md:flex-row xl:pb-56">
           <div className="flex flex-col items-start justify-center space-y-6 md:w-1/2 xl:mr-10">
             <h1 className="text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl dark:text-light">
-              We are <span className="text-second dark:text-light">CARE</span>{" "}
-              experts
+              We <span className="text-second dark:text-light">CARE</span> for
+              your loved ones
             </h1>
             <p className="max-w-xl text-left text-xl font-medium text-dark/60 dark:text-light/60">
-              We provide personalized home care services, focusing on daily
-              activities and companionship to support the independence and
-              well-being of our clients in their homes.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis mollitia vero vel quo cupiditate sint quis laborum
+              accusantium velit eos, pariatur necessitatibus, provident amet
+              voluptatibus odio, consequuntur eaque non tenetur!
             </p>
             <div className="z-10 flex justify-center">
               <button

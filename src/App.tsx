@@ -11,8 +11,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route index element={<AltPage />} />
-          <Route path="/alt" element={<HomePage />} />
+          <Route index element={<HomePage />} />
+          <Route path="/alt" element={<AltPage />} />
         </Routes>
       </Router>
     </>
