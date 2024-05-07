@@ -49,7 +49,7 @@ export default function Footer() {
           <hr className="my-6 h-2 border-gray-400 md:my-8 dark:border-gray-700" />
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            <div className="sm:flex sm:items-center sm:justify-center">
+            <div className="sm:flex sm:items-center sm:justify-start">
               <div className="flex gap-4 hover:cursor-pointer">
                 <img
                   src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg"
@@ -77,9 +77,6 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <p className="font-sans text-start md:p-4 md:text-center md:text-lg">
-              © 2024 The Home Care Company. All rights reserved.
-            </p>
           </div>
         </div>
       </footer>

@@ -3,6 +3,43 @@ import WaveDivider2 from "./WaveDivider2"
 import img_stare from "../assets/stare.jpg"
 import img_line_wave from "../assets/line-wave.jpg"
 
+import { HeartIcon, HomeIcon, TrophyIcon } from "@heroicons/react/24/outline"
+
+const iconColor = "#4992FF"
+
+const content = [
+  {
+    image: (
+      <HeartIcon
+        className="h-8 w-8 stroke-2"
+        aria-hidden="true"
+        color={iconColor}
+      />
+    ),
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatum earum animi non nesciunt. Est reiciendis auteius unde doloribus necessitatibus consectetur atque aspernatur autem, debitis neque facere suscipit laborum. ",
+  },
+  {
+    image: (
+      <HomeIcon
+        className="h-8 w-8 stroke-2"
+        aria-hidden="true"
+        color={iconColor}
+      />
+    ),
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatum earum animi non nesciunt. Est reiciendis auteius unde doloribus necessitatibus consectetur atque aspernatur autem, debitis neque facere suscipit laborum. ",
+  },
+  {
+    image: (
+      <TrophyIcon
+        className="h-8 w-8 stroke-2"
+        aria-hidden="true"
+        color={iconColor}
+      />
+    ),
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatum earum animi non nesciunt. Est reiciendis auteius unde doloribus necessitatibus consectetur atque aspernatur autem, debitis neque facere suscipit laborum. ",
+  },
+]
+
 export default function WhatWeDo() {
   return (
     <>
@@ -26,12 +63,20 @@ export default function WhatWeDo() {
             </div>
           </div>
           <div className="flex w-full flex-col gap-6 md:order-first xl:mx-10">
-            <h1 className="max-w-xl text-left text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl dark:text-light">
+            <h1 className="max-w-xl text-center text-3xl font-bold text-dark [text-shadow:_2px_2px_0_rgb(0_0_0_/_40%)] lg:text-6xl dark:text-light">
               WHAT WE DO
             </h1>
-            <div className="flex flex-col gap-4 text-left text-xl font-medium text-dark/60 lg:text-xl dark:text-light/60">
-              <p>We will treat you like family, because you are family.</p>
-              <p>We serve homes in Whittier, La Mirada, and Fullerton.</p>
+            <div className="flex flex-col gap-4 text-left font-newsreader text-xl font-medium text-dark/60 lg:text-xl dark:text-light/60">
+              {content.map((item) => {
+                return (
+                  <>
+                    <p>
+                      <span className="flex justify-center">{item.image}</span>
+                      <div className="text-center">{item.text}</div>
+                    </p>
+                  </>
+                )
+              })}
             </div>
           </div>
         </div>

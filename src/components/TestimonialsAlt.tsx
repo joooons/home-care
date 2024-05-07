@@ -1,8 +1,3 @@
-// import img_hug from "../assets/hug.jpg"
-// import img_flower from "../assets/flower.jpg"
-// import img_chile from "../assets/chile.jpg"
-// import img_house from "../assets/house.jpg"
-
 import human_1 from "../assets/human-1.jpg"
 import human_2 from "../assets/human-2.jpg"
 import human_3 from "../assets/human-3.jpg"
